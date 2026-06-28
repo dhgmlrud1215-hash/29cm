@@ -1,0 +1,109 @@
+@charset "utf-8";
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {font-family: 'Spoqa Han Sans Neo', 'sans-serif';
+    margin:0 ; padding: 0 10px 0;}
+
+h1 { font-family: "Montserrat", sans-serif;}
+h2 {font-weight: 500;}
+a {text-decoration: none; color: black;}
+
+.mtop {display: flex; justify-content: space-between;
+        margin: 12px 0;}
+
+.top1 {display: flex; gap: 10px;}
+
+.top1 li a {color: #d9d9d9; font-weight: 500; 
+    font-size: 1.2rem;}
+
+.top1 li.active a {color: #000;}
+
+.search {display: flex; }
+.search img {width: 28px; height: 28px;}
+
+
+.topwrap {padding: 0 15px; text-align: center; word-break: keep-all;
+    overflow: hidden; border-bottom: 1px solid rgba(107,107,107,0.5);} 
+
+.topwrap p {font-weight: 300; font-size: 0.9rem; margin-bottom: 15px; }
+
+.topwrap .slick-slide {display: flex; flex-direction: column;
+    align-items: center;}
+
+.topwrap li img {margin-bottom: 10px;}
+
+
+
+.slide {margin-bottom: 80px;}
+
+.catebox1 {display: flex; position: relative;
+        height: 100%; gap: 10px;justify-content: flex-start;}
+
+.left {padding: 45px 0 0; background:rgba(217,217,217,0.5); 
+      line-height: 4; width: 100%;}
+
+.left li {width: 100%;}
+
+.left li.active {background: #fff;}
+
+.left li a {text-align: left; color:gray; display: block; width: 100%;
+            font-size: 14px; white-space: nowrap; padding-left: 10px;}
+
+.left li.active a {color: #000; font-weight:500 ;}
+
+.catebox2 {margin-top:10px; width: 100%;}
+
+.right {margin-top: 45px;}
+
+.right li p {font-weight: 300; font-size: 13px; white-space: nowrap;
+            margin-bottom: 10px;}
+
+.right h3 {font-weight: 500; font-size: 1rem; margin: 30px 0 10px 10px;}
+
+.right h3:after {content: " >";}
+
+.group {display: grid; grid-template-columns: repeat(3,auto);
+    text-align: center; gap: 5px; width: 100%; }
+    
+.group li a img {width: 80px; height: 80px; object-fit: contain;}
+
+.catebox2 select {border: none; font-size: 15px; position: absolute;
+            right: 0; margin-top: 10px;}
+
+
+
+/* top */
+.topbtn {position: fixed;bottom: 130px; right: 20px; z-index: 9999; scroll-behavior: smooth;  }
+.topbtn a {color: #000;}
+.topbtn > button {
+  font-size: 28px;
+  border: 1px solid rgba(255,255,255,0.7);
+  background: rgba(255,255,255,0.85);
+
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+
+  color: #555;
+
+  position: absolute;
+  right: 0;
+  margin: 15px;
+  cursor: pointer;
+
+  box-shadow:
+    0 4px 12px rgba(0,0,0,0.08),
+    0 1px 3px rgba(0,0,0,0.04);
+
+  backdrop-filter: blur(8px);
+  transition: all 0.2s ease;
+}
+
+.topbtn > button:hover {
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 8px 18px rgba(0,0,0,0.12),
+    0 3px 6px rgba(0,0,0,0.06);
+}

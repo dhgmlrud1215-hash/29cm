@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>검색 | 29CM</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/mob_search.css">
+    <link rel="stylesheet" href="css/bar.css">
+    <script src="js/jquery-1.11.2.min.js"></script>
+    <script src="js/slick.min.js"></script>
+     <script src="js/search.js"></script>
+     <script src="js/mob-search-box.js"></script>
+</head>
+
+<body>
+<header>
+    <div class="search-wrap">
+        <div class="back">
+            <a href="main.html" aria-label="이전 페이지로 이동">
+                <img src="mob-stop/Left.png" alt="">
+            </a>
+        </div>
+
+        <div class="search">
+            <input type="text"  id="mobile-search-input" placeholder="단독 입점 브랜드를 혜택과 함께 만나요" aria-label="검색어 입력">
+            <button type="button" class="mobile-clear-btn">×</button>
+            
+            <img src="mob-stop/Search.png" alt="">
+
+            <ul class="mobile-suggest-list"></ul>
+        </div>
+    </div>
+</header>
+
+<select aria-label="성별 기준 선택">
+    <option value="female">여성기준</option>
+    <option value="male">남성기준</option>
+</select>
+
+<section class="gift">
+    <div class="gift-text">
+        <ul>
+            <li>
+                <h4>지금 많이 찾는 <span>선물</span></h4>
+            </li>
+ 
+            <li>
+                <a href="#">
+                    <img src="mob-stop/gift.png" alt="">
+                    선물하기
+                </a>    
+            </li>
+        </ul>
+    </div>
+
+    <div class="gift-wrap">
+        <ul>
+            <li>
+                <a href="#">
+                    <img src="mob-stop/1.png" alt="">
+                    <p>생일</p>
+                </a>
+            </li>
+
+            <li>
+                <a href="#">
+                    <img src="mob-stop/2.png" alt="">
+                    <p>결혼/집들이</p>
+                </a>
+            </li>
+
+            <li>
+                <a href="#">
+                    <img src="mob-stop/3.png" alt="">
+                    <p>졸업/합격</p>
+                </a>
+            </li>
+
+            <li>
+                <a href="#">
+                    <img src="mob-stop/4.png" alt="">
+                    <p>건강/응원</p>
+                </a>
+            </li>
+
+            <li>
+                <a href="#">
+                    <img src="mob-stop/5.png" alt="">
+                    <p>키즈/출산</p>
+                </a>
+            </li>
+
+            <li>
+                <a href="#">
+                    <img src="mob-stop/6.png" alt="">
+                    <p>기념일</p>
+                </a>
+            </li>
+
+            <li>
+                <a href="#">
+                    <img src="mob-stop/7.png" alt="">
+                    <p>언제나</p>
+                </a>
+            </li>
+        </ul>
+    </div>
+</section>
+
+<section class="fashion">
+  <h4>지금 많이 찾는 <span>의류</span>브랜드</h4>
+  
+    <div class="fa-wrap">
+      <div class="slide">
+        <div class="grid">
+            <div class="item">
+                <img src="mob-sfashi/Siyazu.webp" alt="">
+
+                <div class="name">
+                    <p>시야쥬</p>
+                    <p class="sub">#미니멀리즘</p>
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="mob-sfashi/urago.webp" alt="">
+                
+                <div class="name">
+                    <p>유라고</p>
+                    <p class="sub">#기억에 남는</p>
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="mob-sfashi/lon.webp" alt="">
+                
+                <div class="name">
+                    <p>미치코런던 코시노</p>
+                    <p class="sub">#클래식 #현대적</p>
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="mob-sfashi/ch.webp" alt="">
+                
+                <div class="name">
+                    <p>체</p>
+                    <p class="sub">#변하지 않는</p>
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="mob-sfashi/b.webp" alt="">
+                
+                <div class="name">
+                    <p>비터셀즈</p>
+                    <p class="sub">#여름의 기억</p>
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="mob-sfashi/mon.webp" alt="">
+                
+                <div class="name">
+                    <p>몽돌</p>
+                    <p class="sub">#기본에 충실</p>
+                </div>
+            </div>
+        </div>
+      </div>   
+
+        <div class="slide">
+          <div class="grid">
+
+              <div class="item">
+                <img src="mob-sfashi/tu.webp" alt="">
+
+                <div class="name">
+                    <p>튜드먼트</p>
+                    <p class="sub">#빈티지 디테일</p>
+                </div>
+              </div>
+
+             <div class="item">
+                <img src="mob-sfashi/poeto.webp" alt="">
+                
+                <div class="name">
+                    <p>포에토</p>
+                    <p class="sub">#추억 #취향</p>
+                </div>
+             </div>
+
+             <div class="item">
+                <img src="mob-sfashi/108.webp" alt="">
+                
+                <div class="name">
+                    <p>108파운드</p>
+                    <p class="sub">#자연스럽게 스며드는</p>
+                </div>
+             </div>
+
+             <div class="item">
+                <img src="mob-sfashi/artto.webp" alt="">
+                
+                <div class="name">
+                    <p>아르토</p>
+                    <p class="sub">#절제된 미니멀리즘</p>
+                </div>
+             </div>
+
+             <div class="item">
+                <img src="mob-sfashi/noon.webp" alt="">
+                
+                <div class="name">
+                    <p>시눈</p>
+                    <p class="sub">#자연스러운</p>
+                </div>
+             </div>
+
+             <div class="item">
+                <img src="mob-sfashi/lonlon.webp" alt="">
+                
+                <div class="name">
+                    <p>론론</p>
+                    <p class="sub">#로맨틱 캐쥬얼</p>
+                </div>
+             </div>
+          </div>
+        </div>
+    </div>
+</section>
+
+<section class="home">
+  <h4>지금 많이 찾는 <span>홈</span>브랜드</h4>
+
+    <div class="home-wrap">
+        <div class="slide">
+           <div class="grid"> 
+            <div class="item">
+                <img src="mob-shome/fin.webp" alt="">
+
+                <div class="name">
+                    <p>핀카</p>
+                    <p class="sub">#패턴과 컬러</p>
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="mob-shome/kin.jpg" alt="">
+                
+                <div class="name">
+                    <p>킨토</p>
+                    <p class="sub">#창의력 #진정성</p>
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="mob-shome/tounou.webp" alt="">
+                
+                <div class="name">
+                    <p>뚜누</p>
+                    <p class="sub">#봄기운 가득</p>
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="mob-shome/oden.webp" alt="">
+                
+                <div class="name">
+                    <p>오덴세</p>
+                    <p class="sub">#핸드 크래프트</p>
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="mob-shome/casa.webp" alt="">
+                
+                <div class="name">
+                    <p>까사미아</p>
+                    <p class="sub">#새로운 영감</p>
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="mob-shome/nomia.webp" alt="">
+                
+                <div class="name">
+                    <p>노미아</p>
+                    <p class="sub">#러그 #창의적</p>
+                </div>
+            </div>
+           </div> 
+        </div>
+
+        <div class="slide">
+          <div class="grid">   
+            <div class="item">
+                <img src="mob-shome/maisonde.webp" alt="">
+
+                <div class="name">
+                    <p>메종드룸룸</p>
+                    <p class="sub">#아늑한 감성</p>
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="mob-shome/matil.webp" alt="">
+                
+                <div class="name">
+                    <p>마틸라</p>
+                    <p class="sub">#자연 #감성적</p>
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="mob-shome/bowell.jpg" alt="">
+                
+                <div class="name">
+                    <p>보웰</p>
+                    <p class="sub">#휴식 #회복</p>
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="mob-shome/jaju.webp" alt="">
+                
+                <div class="name">
+                    <p>자주</p>
+                    <p class="sub">#정서적인 풍족함</p>
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="mob-shome/ssim.webp" alt="">
+                
+                <div class="name">
+                    <p>쓰임</p>
+                    <p class="sub">#트렌디 리빙</p>
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="mob-shome/soro.jpg" alt="">
+                
+                <div class="name">
+                    <p>소로이샵</p>
+                    <p class="sub">#식탁위에 작고 예쁜</p>
+                </div>
+            </div>
+          </div> 
+        </div>
+    </div>
+</section>
+
+<section class="etc">
+  <h4>지금 많이 찾는 <span>잡화</span>브랜드</h4>
+
+  <div class="etc-wrap">
+      <div class="slide">
+        <div class="grid">
+            <div class="item">
+                <img src="mob-setc/lu.webp" alt="">
+
+                <div class="name">
+                    <p>루에브르</p>
+                    <p class="sub">#빛과 그림자</p>
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="mob-setc/emis.webp" alt="">
+                
+                <div class="name">
+                    <p>이미스</p>
+                    <p class="sub">#평범한 일상 속 특별함</p>
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="mob-setc/aeiou.jpg" alt="">
+                
+                <div class="name">
+                    <p>아에이오우</p>
+                    <p class="sub">#기본에 충실한</p>
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="mob-setc/mu.webp" alt="">
+                
+                <div class="name">
+                    <p>무쿠앤에보니</p>
+                    <p class="sub">#간결 #힘</p>
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="mob-setc/u.webp" alt="">
+                
+                <div class="name">
+                    <p>유르트</p>
+                    <p class="sub">#자연</p>
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="mob-setc/stand.webp" alt="">
+                
+                <div class="name">
+                    <p>스탠드오일</p>
+                    <p class="sub">#빛나는 가치</p>
+                </div>
+            </div>
+        </div>
+      </div> 
+
+      <div class="slide">
+        <div class="grid">
+            <div class="item">
+                <img src="mob-setc/hal.jpg" alt="">
+                
+                <div class="name">
+                    <p>할렌</p>
+                    <p class="sub">#미니멀 #따뜻함</p>
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="mob-setc/some.webp" alt="">
+
+                <div class="name">
+                    <p>썸웨어버터</p>
+                    <p class="sub">#빈티지 캐주얼</p>
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="mob-setc/dragon.webp" alt="">
+                
+                <div class="name">
+                    <p>드래곤 디퓨전</p>
+                    <p class="sub">#덜어낼수록 완성되는</p>
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="mob-setc/hotel.webp" alt="">
+                
+                <div class="name">
+                    <p>호텔파리칠</p>
+                    <p class="sub">#작은행복</p>
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="mob-setc/find.webp" alt="">
+                
+                <div class="name">
+                    <p>파인드카푸어</p>
+                    <p class="sub">#실용적 #자유로운</p>
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="mob-setc/masma.webp" alt="">
+                
+                <div class="name">
+                    <p>마스마룰즈</p>
+                    <p class="sub">#일상이 여행이 되는 </p>
+                </div>
+            </div>
+        </div> 
+      </div>     
+   </div>
+</section>
+
+
+
+<?php include "php/bar.php"; ?>
+</body>
+</html> 

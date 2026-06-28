@@ -1,0 +1,150 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    margin: 0;
+    background: #ffffff;
+    font-family: "Noto Sans KR", sans-serif;
+    color: #111;
+}
+
+.mtop h1 {
+    position: relative;
+    top: -15px;
+}
+
+.qna-form {
+    max-width: 760px;
+    margin: 90px auto 80px;
+    padding: 0 20px;
+    font-family: "Noto Sans KR", sans-serif;
+    color: #111;
+}
+
+.qna-form .sub-title {
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: #888;
+    margin-bottom: 10px;
+}
+
+.qna-form h2 {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 14px;
+}
+
+.qna-form .desc {
+    font-size: 15px;
+    line-height: 1.7;
+    color: #666;
+    margin-bottom: 45px;
+}
+
+.qna-form form {
+    border-top: 2px solid #111;
+}
+
+.qna-form .field {
+    padding: 24px 0;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.qna-form label {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.qna-form input,
+.qna-form textarea,
+.qna-form select {
+    width: 100%;
+    border: 1px solid #ddd;
+    background: #fff;
+    padding: 15px;
+    font-size: 14px;
+    font-family: inherit;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.qna-form input,
+.qna-form select {
+    height: 50px;
+}
+
+.qna-form textarea {
+    height: 260px;
+    resize: none;
+    line-height: 1.7;
+}
+
+.qna-form input:focus,
+.qna-form textarea:focus,
+.qna-form select:focus {
+    border-color: #111;
+}
+
+.qna-form .notice-box {
+    margin-top: 24px;
+    padding: 18px 20px;
+    background: #f7f7f7;
+    color: #666;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.qna-form .btn-group {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 35px;
+}
+
+.qna-form .btn-cancel,
+.qna-form .btn-submit {
+    width: 120px;
+    height: 46px;
+    border: 1px solid #111;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: inherit;
+    cursor: pointer;
+    text-align: center;
+    line-height: 46px;
+    box-sizing: border-box;
+    align-items: center;
+}
+
+.qna-form .btn-cancel {
+    background: #fff;
+    color: #111;
+    text-decoration: none;
+}
+
+.qna-form .btn-submit {
+    background: #111;
+    color: #fff;
+}
+
+.qna-form .btn-cancel:hover {
+    background: #f5f5f5;
+}
+
+.qna-form .btn-submit:hover {
+    background: #333;
+}
+
+.view-content {
+    padding: 16px 18px;
+    border: 1px solid #ddd;
+    background: #fafafa;
+    line-height: 1.8;
+    min-height: 52px;
+    border-radius: 4px;
+    box-sizing: border-box;
+}

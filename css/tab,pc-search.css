@@ -1,0 +1,193 @@
+@charset "utf-8";
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
+
+
+
+.search-model {
+    position: fixed;
+    width: 300px;
+    max-width: 80vw;
+    right: -100%;
+    top: 0;
+    background: rgba(255, 255, 255, 0.96);
+    z-index: 99999;
+    height: 100%;
+    transition: 0.4s ease;
+    box-shadow: -12px 0 40px rgba(0, 0, 0, 0.08);
+    overflow-x: hidden;
+}
+
+.search-model.active {
+    right: 0;
+}
+
+
+.search-model-form {
+  position: absolute;
+  top: 10%;
+  left: 40px;
+  width: min(320px, calc(100% - 80px));
+  padding: 0;
+  margin: 0;
+  transform: none;
+}
+
+.search-model-form input {
+    width: 100%;
+  height: 40px;
+  font-size: 20px;
+  font-weight: 600;
+  border: none;
+  border-bottom: 2px solid #222;
+  background: none;
+  outline: none;
+  padding: 0 20px 5px 0;
+}
+
+#search-input::placeholder {
+    color: rgba(107, 107, 107, 0.35);
+    font-weight: 500;
+}
+
+.search-model-form img {
+    position: absolute;
+    right: 0;
+    top: 10px;
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+}
+
+.search-model-form img:hover {
+    opacity: 1;
+    transform: scale(1.05);
+}
+
+.suggest-list {
+  display: none;
+  position: absolute;
+
+  top: 64px;
+  left: 0;
+  width: 100%;
+
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+
+  z-index: 999999;
+}
+
+.suggest-list li {
+  padding: 8px 0;
+  font-size: 15px;
+  color: #222;
+  cursor: pointer;
+}
+
+.suggest-list li:hover {
+  font-weight: 600;
+}
+
+.search-close-switch {
+    position: absolute;
+    text-align: center;
+    top: 30px;
+    right: 20px;
+    cursor: pointer;
+}
+
+.search-close-switch img {
+   width: 25px;
+   height: 25px;
+}
+
+
+.search-word {
+  position: absolute;
+  top: 40%;
+  left: 40px;
+  width: min(320px, calc(100% - 80px));
+  margin-left: 0;
+  transform: none;
+  transition: 0.3s;
+}
+
+.search-word.down {
+  top: 60%;
+}
+
+.popular {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.popular p {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 18px;
+  letter-spacing: -0.5px;
+  color: #222;
+}
+
+.popular a {
+  line-height: 1.7;
+  color: #333;
+  font-size: 16px;
+  font-weight: 400;
+  text-decoration: none;
+  letter-spacing: -0.3px;
+
+  opacity: 0;
+  transform: translateY(12px);
+  transition: 0.2s;
+}
+
+.popular a:hover {
+  color: #000;
+  font-weight: 600;
+  transform: translateX(4px);
+}
+
+.popular.show a {
+  animation: keywordFadeUp 0.5s ease forwards;
+}
+
+.popular.show a:nth-of-type(1) { animation-delay: 0.05s; }
+.popular.show a:nth-of-type(2) { animation-delay: 0.17s; }
+.popular.show a:nth-of-type(3) { animation-delay: 0.29s; }
+.popular.show a:nth-of-type(4) { animation-delay: 0.41s; }
+.popular.show a:nth-of-type(5) { animation-delay: 0.53s; }
+.popular.show a:nth-of-type(6) { animation-delay: 0.65s; }
+.popular.show a:nth-of-type(7) { animation-delay: 0.77s; }
+.popular.show a:nth-of-type(8) { animation-delay: 0.89s; }
+.popular.show a:nth-of-type(9) { animation-delay: 1.01s; }
+.popular.show a:nth-of-type(10) { animation-delay: 1.13s; }
+
+@keyframes keywordFadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+
+
+
+@media screen and (min-width:1025px) {
+    .search-model {
+   
+        width:35%;  
+    }
+
+}
+
+@media screen and (min-width:1419px) {
+    .search-model {
+   
+        width:25%;  
+    }
+
+}

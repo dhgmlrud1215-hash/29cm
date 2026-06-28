@@ -1,0 +1,4293 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>메인</title>
+    <link rel="icon" href="img_mtop/favicon.png">
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/tab,pc-search.css">
+    <link rel="stylesheet" href="css/bar.css">
+    <script src="js/jquery-1.11.2.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/intro.js"></script>
+    <script src="js/mob,tab-banner.js"></script>
+    <script src="js/pc-banner.js"></script>
+    <script src="js/brand_story.js"></script>
+    <script src="js/brand_pick.js"></script>
+    <script src="js/best.js"></script>
+    <script src="js/tab-menu.js"></script>
+    <script src="js/PC-menu.js"></script>
+    <script src="js/tab,pc-search.js"></script>
+    <script src="js/living.js"></script>
+    <script src="js/editor_pick.js"></script>
+    <script src="js/search-box.js"></script>
+</head>
+
+<body>
+<section class="intro-visual" id="introVisual">
+  <button class="intro-close" type="button">×</button>
+
+  <div class="intro-img img1"></div>
+  <div class="intro-img img2"></div>
+  <div class="intro-img img3"></div>
+
+  <div class="intro-text">
+    <h1>29CM</h1>
+    <p>당신의 취향이 머무는 곳</p>
+    <span>감도 깊은 선택을 위한 라이프스타일 플랫폼</span>
+    <em>SCROLL ↓</em>
+</div>
+</section>
+
+
+    <header id="main">
+        <div class="mtop">
+            <h1><a href="main.html">29CM</a></h1>
+            
+            <div class="topicon"> 
+                <a href="cart.html" aria-label="장바구니">
+                    <img src="img_mtop/Shopping Bag.png" alt="">
+                </a>
+
+                <a class="toplike" href="like.html" aria-label="좋아요">
+                    <img src="img_mtop/Favorite.png" alt="">
+                </a>
+
+                <a class="topsearch" href="#" aria-label="검색창 열기">
+                    <img src="img_mtop/Search.png" alt="">
+                </a>
+
+                <a class="topPro" href="mypage(none).html" aria-label="마이페이지">
+                    <img src="img_mtop/Profile.png" alt="">
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <div class="search-model" aria-hidden="true"> <!-- tab,pc 검색-->
+
+        <div class="search-close-switch" role="button" tabindex="0" aria-label="검색창 닫기">
+            <img src="img_mtop/X.png" alt="">
+        </div>
+
+        <form class="search-model-form" role="search">
+            <input type="text" id="search-input" placeholder="검색어를 입력하세요" aria-label="검색어 입력">
+            <img src="img_mtop/Search.png" alt="검색하기">
+
+            <ul class="suggest-list"></ul>
+        </form>
+
+        <div class="search-word">
+            <div class="popular">
+                <p>인기검색어</p>
+
+                <a href="#">수저통</a>
+                <a href="#">체크 셔츠</a>
+                <a href="#">머리끈</a>
+                <a href="#">테이블</a>
+                <a href="#">아르켓</a>
+                <a href="#">반다나</a>
+                <a href="#">페이즈</a>
+                <a href="#">퓨마</a>
+                <a href="#">사이드테이블</a>
+                <a href="#">인더로우</a>
+            </div>
+        </div>
+   </div>
+
+    <nav class="mtop_menu">
+            <ul>
+                <li class="tab_ham"><img src="img_mtop/Menu.png" alt="hamburger"></li>
+                <li><a href="29magazine.html">29Magazine</a></li>
+                <li><a href="lookbook.html">Lookbook</a></li>
+                <li><a href="showcase.html">Showcase</a></li>
+                <li><a href="event.html">Event</a></li>
+            </ul>
+
+        <div class="tab-menu">
+            <div class="tmenu-wrap">
+                <ul class="tm1">
+                    <li><a href="#">BEST</a>
+                        <ul class="tm2"></ul>
+                    </li>
+
+                    <li><a href="#">WOMEN</a>
+
+                        <ul class="tm2">
+                            <li><a href="#">의류</a>
+                                <ul class="tm3">
+                                    <li><a href="#">ALL</a></li>
+                                    <li><a href="#">NEW</a></li>
+                                    <li><a href="#">단독</a></li>
+                                    <li><a href="#">해외브랜드</a></li>
+                                    <li><a href="#">아우터</a></li>
+                                    <li><a href="#">상의</a></li>
+                                    <li><a href="#">셋업</a></li>
+                                    <li><a href="#">바지</a></li>
+                                    <li><a href="#">스커트</a></li>
+                                    <li><a href="#">원피스</a></li>
+                                    <li><a href="#">점프수트</a></li>
+                                    <li><a href="#">니트웨어</a></li>
+                                    <li><a href="#">언더웨어</a></li>
+                                    <li><a href="#">홈웨어</a></li>
+                                    <li><a href="#">파티복/행사복</a></li>
+                                </ul>
+                            </li>
+
+                            <li><a href="#">가방</a>
+                                <ul class="tm3">
+                                    <li><a href="#">ALL</a></li>
+                                    <li><a href="#">NEW</a></li>
+                                    <li><a href="#">단독</a></li>
+                                    <li><a href="#">해외브랜드</a></li>
+                                    <li><a href="#">숄더백</a></li>
+                                    <li><a href="#">토트백</a></li>
+                                    <li><a href="#">에코/캔버스백</a></li>
+                                    <li><a href="#">백팩</a></li>
+                                    <li><a href="#">크로스백</a></li>
+                                    <li><a href="#">웨이스트백</a></li>
+                                    <li><a href="#">보스턴백</a></li>
+                                    <li><a href="#">캐리어/여행가방</a></li>
+                                    <li><a href="#">클러치</a></li>
+                                    <li><a href="#">기타가방</a></li>
+                                    <li><a href="#">가방 액세서리</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">신발</a>
+                                <ul class="tm3">
+                                    <li><a href="#">ALL</a></li>
+                                    <li><a href="#">NEW</a></li>
+                                    <li><a href="#">단독</a></li>
+                                    <li><a href="#">해외브랜드</a></li>
+                                    <li><a href="#">스니커즈</a></li>
+                                    <li><a href="#">플랫슈즈</a></li>
+                                    <li><a href="#">부츠</a></li>
+                                    <li><a href="#">로퍼</a></li>
+                                    <li><a href="#">힐/펌프스</a></li>
+                                    <li><a href="#">샌들</a></li>
+                                    <li><a href="#">슬리퍼</a></li>
+                                    <li><a href="#">신발 액세서리</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">액세서리</a>
+                                <ul class="tm3">
+                                    <li><a href="#">ALL</a></li>
+                                    <li><a href="#">NEW</a></li>
+                                    <li><a href="#">단독</a></li>
+                                    <li><a href="#">해외브랜드</a></li>
+                                    <li><a href="#">선물포장</a></li>
+                                    <li><a href="#">모자</a></li>
+                                    <li><a href="#">벨트</a></li>
+                                    <li><a href="#">양말</a></li>
+                                    <li><a href="#">시계</a></li>
+                                    <li><a href="#">헤어 액세서리</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">주얼리</a>
+                                <ul class="tm3">
+                                    <li><a href="#">ALL</a></li>
+                                    <li><a href="#">NEW</a></li>
+                                    <li><a href="#">단독</a></li>
+                                    <li><a href="#">귀걸이</a></li>
+                                    <li><a href="#">목걸이</a></li>
+                                    <li><a href="#">팔찌</a></li>
+                                    <li><a href="#">반지</a></li>
+                                    <li><a href="#">발찌</a></li>
+                                    <li><a href="#">주얼리 세트</a></li>
+                                    <li><a href="#">브로치/팬던트</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                        
+                    <li><a href="#">MEN</a>
+                        <ul class="tm2">
+                            <li><a href="#">의류</a>
+                                <ul class="tm3">
+                                    <li><a href="#">ALL</a></li>
+                                    <li><a href="#">NEW</a></li>
+                                    <li><a href="#">단독</a></li>
+                                    <li><a href="#">해외브랜드</a></li>
+                                    <li><a href="#">아우터</a></li>
+                                    <li><a href="#">상의</a></li>
+                                    <li><a href="#">하의</a></li>
+                                    <li><a href="#">아우터</a></li>
+                                    <li><a href="#">셋업</a></li>
+                                    <li><a href="#">이너웨어</a></li>
+                                    <li><a href="#">홈웨어</a></li>
+                                </ul>
+                            </li>
+
+                            <li><a href="#">가방</a>
+                                <ul class="tm3">
+                                    <li><a href="#">ALL</a></li>
+                                    <li><a href="#">NEW</a></li>
+                                    <li><a href="#">단독</a></li>
+                                    <li><a href="#">해외브랜드</a></li>
+                                    <li><a href="#">백팩</a></li>
+                                    <li><a href="#">크로스백</a></li>
+                                    <li><a href="#">토트백</a></li>
+                                    <li><a href="#">캐리어/여행가방</a></li>
+                                    <li><a href="#">랩탑백</a></li>
+                                    <li><a href="#">숄더백</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">신발</a>
+                                <ul class="tm3">
+                                    <li><a href="#">ALL</a></li>
+                                    <li><a href="#">NEW</a></li>
+                                    <li><a href="#">단독</a></li>
+                                    <li><a href="#">해외브랜드</a></li>
+                                    <li><a href="#">스니커즈</a></li>
+                                    <li><a href="#">샌들</a></li>
+                                    <li><a href="#">구두</a></li>
+                                    <li><a href="#">로퍼</a></li>
+                                    <li><a href="#">부츠</a></li>
+                                    <li><a href="#">슬리퍼</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">액세서리</a>
+                                <ul class="tm3">
+                                    <li><a href="#">ALL</a></li>
+                                    <li><a href="#">NEW</a></li>
+                                    <li><a href="#">단독</a></li>
+                                    <li><a href="#">해외브랜드</a></li>
+                                    <li><a href="#">모자</a></li>
+                                    <li><a href="#">양말</a></li>
+                                    <li><a href="#">벨트</a></li>
+                                    <li><a href="#">아이웨어</a></li>
+                                    <li><a href="#">지갑/카드케이스</a></li>
+                                    <li><a href="#">기타 액세서리</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">주얼리</a>
+                                <ul class="tm3">
+                                    <li><a href="#">ALL</a></li>
+                                    <li><a href="#">NEW</a></li>
+                                    <li><a href="#">목걸이</a></li>
+                                    <li><a href="#">팔찌</a></li>
+                                    <li><a href="#">반지</a></li>
+                                    <li><a href="#">귀걸이</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li><a href="#">KIDS</a>
+                        <ul class="tm2">
+                            <li><a href="#">유아,아동</a>
+                                <ul class="tm3">
+                                    <li><a href="#">ALL</a></li>
+                                    <li><a href="#">NEW</a></li>
+                                    <li><a href="#">여아 의류</a></li>
+                                    <li><a href="#">남아 의유</a></li>
+                                    <li><a href="#">모자</a></li>
+                                    <li><a href="#">베이비</a></li>
+                                    <li><a href="#">유아동 침구</a></li>
+                                    <li><a href="#">신발</a></li>
+                                    <li><a href="#">잡화</a></li>
+                                    <li><a href="#">토이/교육</a></li>
+                                    <li><a href="#">유아동 식기</a></li>
+                                    <li><a href="#">가방</a></li>
+                                    <li><a href="#">유아 용품</a></li>
+                                    <li><a href="#">외출 용품</a></li>
+                                    <li><a href="#">유아동 가구</a></li>
+                                    <li><a href="#">유아식/분유</a></li>
+                                    <li><a href="#">수유 용품</a></li>
+                                    <li><a href="#">임산부/태교용품</a></li>
+                                    <li><a href="#">선물하기</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li><a href="#">BEAUTY</a>
+                        <ul class="tm2">
+                            <li><a href="#">뷰티</a>
+                                <ul class="tm3">
+                                    <li><a href="#">ALL</a></li>
+                                    <li><a href="#">NEW</a></li>
+                                    <li><a href="#">단독</a></li>
+                                    <li><a href="#">해외브랜드</a></li>
+                                    <li><a href="#">선물세트</a></li>
+                                    <li><a href="#">스킨케어</a></li>
+                                    <li><a href="#">메이크업</a></li>
+                                    <li><a href="#">선케어</a></li>
+                                    <li><a href="#">프래그런스</a></li>
+                                    <li><a href="#">바디케어</a></li>
+                                    <li><a href="#">헤어케어</a></li>
+                                    <li><a href="#">뷰티소품/기기</a></li>
+                                    <li><a href="#">건강식품</a></li>
+                                    <li><a href="#">맨즈뷰티</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="#">LIVING</a>
+                        <ul class="tm2">
+                            <li><a href="#">가구,인테리어</a>
+                                <ul class="tm3">
+                                    <li><a href="#">ALL</a></li>
+                                    <li><a href="#">NEW</a></li>
+                                    <li><a href="#">단독</a></li>
+                                    <li><a href="#">해외브랜드</a></li>
+                                    <li><a href="#">침구</a></li>
+                                    <li><a href="#">홈패브릭</a></li>
+                                    <li><a href="#">가구</a></li>
+                                    <li><a href="#">조명</a></li>
+                                    <li><a href="#">홈데코</a></li>
+                                    <li><a href="#">가구</a></li>
+                                    <li><a href="#">스테이셔너리</a></li>
+                                    <li><a href="#">가드닝</a></li>
+                                    <li><a href="#">아트/디자인</a></li>
+                                    <li><a href="#">책/음반</a></li>
+                                    <li><a href="#">선물하기</a></li>
+                                </ul>
+                            </li>
+
+                            <li><a href="#">주방,생활</a>
+                                <ul class="tm3">
+                                    <li><a href="#">ALL</a></li>
+                                    <li><a href="#">NEW</a></li>
+                                    <li><a href="#">단독</a></li>
+                                    <li><a href="#">그릇/커트러리</a></li>
+                                    <li><a href="#">컵/잔/텀블러</a></li>
+                                    <li><a href="#">욕실</a></li>
+                                    <li><a href="#">조리도구</a></li>
+                                    <li><a href="#">냄비/팬/솥</a></li>
+                                    <li><a href="#">홈프래그런스</a></li>
+                                    <li><a href="#">저장용기/도시락</a></li>
+                                    <li><a href="#">생활수납/정리</a></li>
+                                    <li><a href="#">주방잡화</a></li>
+                                    <li><a href="#">주방수납/정리</a></li>
+                                    <li><a href="#">생필품</a></li>
+                                    <li><a href="#">기타생활</a></li>
+                                    <li><a href="#">테이블데코</a></li>
+                                    <li><a href="#">반려동물</a></li>
+                                    <li><a href="#">선물하기</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">레저</a>
+                                <ul class="tm3">
+                                    <li><a href="#">ALL</a></li>
+                                    <li><a href="#">NEW</a></li>
+                                    <li><a href="#">요가/필라테스</a></li>
+                                    <li><a href="#">수영</a></li>
+                                    <li><a href="#">러닝</a></li>
+                                    <li><a href="#">테니스</a></li>
+                                    <li><a href="#">피트니스</a></li>
+                                    <li><a href="#">캠핑</a></li>
+                                    <li><a href="#">등산/하이킹</a></li>
+                                    <li><a href="#">골프</a></li>
+                                    <li><a href="#">자전거</a></li>
+                                    <li><a href="#">여행</a></li>
+                                    <li><a href="#">발레</a></li>
+                                    <li><a href="#">기타스포츠</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="#">TECH</a>
+                        <ul class="tm2">
+                            <li><a href="#">가전</a>
+                                <ul class="tm3">
+                                    <li><a href="#">ALL</a></li>
+                                    <li><a href="#">NEW</a></li>
+                                    <li><a href="#">주방가전</a></li>
+                                    <li><a href="#">이미용가전</a></li>
+                                    <li><a href="#">계절가전</a></li>
+                                    <li><a href="#">생활가전</a></li>
+                                    <li><a href="#">영상가전</a></li>
+                                    <li><a href="#">청소기</a></li>
+                                    <li><a href="#">세탁기/건조기</a></li>
+                                    <li><a href="#">건강가전</a></li>
+                                    <li><a href="#">리퍼브</a></li>
+                                </ul> 
+                            </li>
+
+                            <li><a href="#">컴퓨터,디지털</a>
+                                <ul class="tm3">
+                                    <li><a href="#">ALL</a></li>
+                                    <li><a href="#">NEW</a></li>
+                                    <li><a href="#">모바일/웨어러블</a></li>
+                                    <li><a href="#">모바일 액세서리</a></li>
+                                    <li><a href="#">PC/노트북</a></li>
+                                    <li><a href="#">게임</a></li>
+                                    <li><a href="#">음향기기</a></li>
+                                    <li><a href="#">사진</a></li>
+                                    <li><a href="#">자동차용품/장난감</a></li>
+                                    <li><a href="#">저장장치</a></li>
+                                    <li><a href="#">스마트모빌리티</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="#">FOOD</a>
+                        <ul class="tm2">
+                            <li><a href="#">푸드</a>
+                                <ul class="tm3">
+                                    <li><a href="#">ALL</a></li>
+                                    <li><a href="#">NEW</a></li>
+                                    <li><a href="#">음료</a></li>
+                                    <li><a href="#">이너뷰티/식단관리</a></li>
+                                    <li><a href="#">가공식품</a></li>
+                                    <li><a href="#">선물세트</a></li>
+                                    <li><a href="#">잼/꿀/오일</a></li>
+                                    <li><a href="#">신선/냉장</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="#">CULTURE</a>
+                        <ul class="tm2">
+                            <li><a href="#">컬처</a>
+                                <ul class="tm3">
+                                    <li><a href="#">ALL</a></li>
+                                    <li><a href="#">NEW</a></li>
+                                    <li><a href="#">티켓</a></li>
+                                    <li><a href="#">이벤트</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="#">EARTH</a>
+                        <ul class="tm2"></ul>
+                    </li>
+
+                </ul>
+           
+        </div>
+    </div>
+    </nav>
+
+        <nav class="mtop_sub" aria-label="상품 카테고리 메뉴">
+            <div class="sub-menu">
+                <ul class="sub1">
+                    <li data-key="BEST"><a href="#">BEST</a></li>
+                    <li data-key="FASHION"><a href="#">FASHION</a></li>
+                    <li data-key="BEAUTY"><a href="#">BEAUTY</a></li>
+                    <li data-key="LIVING"><a href="#">LIVING</a></li>
+                    <li data-key="TECH"><a href="#">TECH</a></li>
+                    <li data-key="FOOD"><a href="#">FOOD</a></li>
+                    <li data-key="CULTURE"><a href="#">CULTURE</a></li>
+                    <li data-key="EARTH"><a href="#">EARTH</a></li>
+                </ul>
+
+        
+                    <div class="sub-wrap">
+                        <div class="sub-box">
+                            <div class="sub3-wrap">
+                                <ul class="sub3">
+                                    <li><a href="#">BEST 전체</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                
+
+                 <div class="menu-contents">
+                   <div class="menu-panel" data-key="FASHION">
+                        <ul class="left">
+                                <li class="active">Women</li>
+                                <li>Men</li>
+                                <li>Kids</li>
+                        </ul>
+                     <div class="sub-wrap">
+                        <div class="sub-box">
+                            <ul class="sub2">
+                                <li><a href="#">의류</a></li>
+                                <li><a href="#">가방</a></li>
+                                <li><a href="#">신발</a></li>
+                                <li><a href="#">액세서리</a></li>
+                                <li><a href="#">주얼리</a></li>
+                            </ul>
+
+                            <div class="sub3-wrap">
+                              <ul class="sub3 activ">
+                                    <li><a href="#">ALL</a></li>
+                                    <li><a href="#">NEW</a></li>
+                                    <li><a href="#">단독</a></li>
+                                    <li><a href="#">해외브랜드</a></li>
+                                    <li><a href="#">아우터</a></li>
+                                    <li><a href="#">상의</a></li>
+                                    <li><a href="#">셋업</a></li>
+                                    <li><a href="#">바지</a></li>
+                                    <li><a href="#">스커트</a></li>
+                                    <li><a href="#">원피스</a></li>
+                                    <li><a href="#">점프수트</a></li>
+                                    <li><a href="#">니트웨어</a></li>
+                                    <li><a href="#">언더웨어</a></li>
+                                    <li><a href="#">홈웨어</a></li>
+                                    <li><a href="#">파티복/행사복</a></li>
+                                </ul>
+
+                                <ul class="sub3">
+                                    <li><a href="#">ALL</a></li>
+                                    <li><a href="#">NEW</a></li>
+                                    <li><a href="#">단독</a></li>
+                                    <li><a href="#">해외브랜드</a></li>
+                                    <li><a href="#">숄더백</a></li>
+                                    <li><a href="#">토트백</a></li>
+                                    <li><a href="#">에코/캔버스백</a></li>
+                                    <li><a href="#">백팩</a></li>
+                                    <li><a href="#">크로스백</a></li>
+                                    <li><a href="#">웨이스트백</a></li>
+                                    <li><a href="#">보스턴백</a></li>
+                                    <li><a href="#">캐리어/여행가방</a></li>
+                                    <li><a href="#">클러치</a></li>
+                                    <li><a href="#">기타가방</a></li>
+                                    <li><a href="#">가방 액세서리</a></li>
+                                </ul>
+
+                                <ul class="sub3">
+                                    <li><a href="#">ALL</a></li>
+                                    <li><a href="#">NEW</a></li>
+                                    <li><a href="#">단독</a></li>
+                                    <li><a href="#">해외브랜드</a></li>
+                                    <li><a href="#">스니커즈</a></li>
+                                    <li><a href="#">플랫슈즈</a></li>
+                                    <li><a href="#">부츠</a></li>
+                                    <li><a href="#">로퍼</a></li>
+                                    <li><a href="#">힐/펌프스</a></li>
+                                    <li><a href="#">샌들</a></li>
+                                    <li><a href="#">슬리퍼</a></li>
+                                    <li><a href="#">신발 액세서리</a></li>
+                                </ul>
+
+                                <ul class="sub3">
+                                    <li><a href="#">ALL</a></li>
+                                    <li><a href="#">NEW</a></li>
+                                    <li><a href="#">단독</a></li>
+                                    <li><a href="#">해외브랜드</a></li>
+                                    <li><a href="#">선물포장</a></li>
+                                    <li><a href="#">모자</a></li>
+                                    <li><a href="#">벨트</a></li>
+                                    <li><a href="#">양말</a></li>
+                                    <li><a href="#">시계</a></li>
+                                    <li><a href="#">헤어 액세서리</a></li>
+                                </ul> 
+
+                                 <ul class="sub3">
+                                    <li><a href="#">ALL</a></li>
+                                    <li><a href="#">NEW</a></li>
+                                    <li><a href="#">단독</a></li>
+                                    <li><a href="#">귀걸이</a></li>
+                                    <li><a href="#">목걸이</a></li>
+                                    <li><a href="#">팔찌</a></li>
+                                    <li><a href="#">반지</a></li>
+                                    <li><a href="#">발찌</a></li>
+                                    <li><a href="#">주얼리 세트</a></li>
+                                    <li><a href="#">브로치/팬던트</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="top-brand-menu">
+                                <h3>TOP BRAND</h3>
+                                    <ul>
+                                        <li><a href="#">파르티멘토 우먼</a></li>
+                                        <li><a href="#">코즈넉</a></li>
+                                        <li><a href="#">비터셀즈</a></li>
+                                        <li><a href="#">아이디어숍</a></li>
+                                        <li><a href="#">헬리녹스 웨어</a></li>
+                                        <li><a href="#">반로에</a></li>
+                                        <li><a href="#">삭피엔스</a></li>
+                                        <li><a href="#">일오공칠</a></li>
+                                        <li><a href="#">누스</a></li>
+                                        <li><a href="#">리끌로우</a></li>
+                                        <li><a href="#">앵브록스</a></li>
+                                        <li><a href="#">미니골드</a></li>
+                                    </ul>
+                            </div>
+                        </div>
+               
+                        <div class="sub-box">
+                            <ul class="sub2">
+                                <li><a href="#">의류</a></li>
+                                <li><a href="#">가방</a></li>
+                                <li><a href="#">신발</a></li>
+                                <li><a href="#">액세서리</a></li>
+                                <li><a href="#">주얼리</a></li>
+                            </ul>
+
+                          <div class="sub3-wrap">
+                                <ul class="sub3 activ">
+                                    <li><a href="#">ALL</a></li>
+                                    <li><a href="#">NEW</a></li>
+                                    <li><a href="#">단독</a></li>
+                                    <li><a href="#">해외브랜드</a></li>
+                                    <li><a href="#">아우터</a></li>
+                                    <li><a href="#">상의</a></li>
+                                    <li><a href="#">하의</a></li>
+                                    <li><a href="#">아우터</a></li>
+                                    <li><a href="#">셋업</a></li>
+                                    <li><a href="#">이너웨어</a></li>
+                                    <li><a href="#">홈웨어</a></li>
+                                </ul> 
+
+                                <ul class="sub3">
+                                    <li><a href="#">ALL</a></li>
+                                    <li><a href="#">NEW</a></li>
+                                    <li><a href="#">단독</a></li>
+                                    <li><a href="#">해외브랜드</a></li>
+                                    <li><a href="#">백팩</a></li>
+                                    <li><a href="#">크로스백</a></li>
+                                    <li><a href="#">토트백</a></li>
+                                    <li><a href="#">캐리어/여행가방</a></li>
+                                    <li><a href="#">랩탑백</a></li>
+                                    <li><a href="#">숄더백</a></li>
+                                </ul>
+
+                                <ul class="sub3">
+                                    <li><a href="#">ALL</a></li>
+                                    <li><a href="#">NEW</a></li>
+                                    <li><a href="#">단독</a></li>
+                                    <li><a href="#">해외브랜드</a></li>
+                                    <li><a href="#">스니커즈</a></li>
+                                    <li><a href="#">샌들</a></li>
+                                    <li><a href="#">구두</a></li>
+                                    <li><a href="#">로퍼</a></li>
+                                    <li><a href="#">부츠</a></li>
+                                    <li><a href="#">슬리퍼</a></li>
+                                </ul>
+
+                                <ul class="sub3">
+                                    <li><a href="#">ALL</a></li>
+                                    <li><a href="#">NEW</a></li>
+                                    <li><a href="#">단독</a></li>
+                                    <li><a href="#">해외브랜드</a></li>
+                                    <li><a href="#">모자</a></li>
+                                    <li><a href="#">양말</a></li>
+                                    <li><a href="#">벨트</a></li>
+                                    <li><a href="#">아이웨어</a></li>
+                                    <li><a href="#">지갑/카드케이스</a></li>
+                                    <li><a href="#">기타 액세서리</a></li>
+                                </ul>
+
+                                <ul class="sub3">
+                                    <li><a href="#">ALL</a></li>
+                                    <li><a href="#">NEW</a></li>
+                                    <li><a href="#">목걸이</a></li>
+                                    <li><a href="#">팔찌</a></li>
+                                    <li><a href="#">반지</a></li>
+                                    <li><a href="#">귀걸이</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="top-brand-menu">
+                                <h3>TOP BRAND</h3>
+                                    <ul>
+                                        <li><a href="#">토마스모어</a></li>
+                                        <li><a href="#">디스이즈네버댓</a></li>
+                                        <li><a href="#">앤더슨벨</a></li>
+                                        <li><a href="#">롬버스랩</a></li>
+                                        <li><a href="#">누아트스튜디오</a></li>
+                                        <li><a href="#">우포스</a></li>
+                                        <li><a href="#">아디다스</a></li>
+                                        <li><a href="#">아치스</a></li>
+                                        <li><a href="#">일오공칠</a></li>
+                                        <li><a href="#">타입서비스</a></li>
+                                        <li><a href="#">헤이</a></li>
+                                        <li><a href="#">넘버링</a></li>
+                                    </ul>
+                            </div>
+                         </div> 
+
+                        <div class="sub-box">
+                                <div class="sub3-wrap">
+                                 <ul class="sub3 active">
+                                    <li><a href="#">ALL</a></li>
+                                    <li><a href="#">NEW</a></li>
+                                    <li><a href="#">여아 의류</a></li>
+                                    <li><a href="#">남아 의류</a></li>
+                                    <li><a href="#">모자</a></li>
+                                    <li><a href="#">베이비</a></li>
+                                    <li><a href="#">유아동 침구</a></li>
+                                    <li><a href="#">신발</a></li>
+                                    <li><a href="#">잡화</a></li>
+                                    <li><a href="#">토이/교육</a></li>
+                                    <li><a href="#">유아동 식기</a></li>
+                                    <li><a href="#">가방</a></li>
+                                    <li><a href="#">유아 용품</a></li>
+                                    <li><a href="#">외출 용품</a></li>
+                                    <li><a href="#">유아동 가구</a></li>
+                                    <li><a href="#">유아식/분유</a></li>
+                                    <li><a href="#">수유 용품</a></li>
+                                    <li><a href="#">임산부/태교용품</a></li>
+                                    <li><a href="#">선물하기</a></li>
+                                </ul>
+                                </div>
+
+                                <div class="top-brand-menu">
+                                <h3>TOP BRAND</h3>
+                                    <ul>
+                                        <li><a href="#">콘크리트브레드</a></li>
+                                        <li><a href="#">마이리틀데이지</a></li>
+                                        <li><a href="#">드타미프로젝트</a></li>
+                                        <li><a href="#">디자인스킨</a></li>
+                                        <li><a href="#">꾸꾸에떼</a></li>
+                                        <li><a href="#">올리앤캐롤</a></li>
+                                        <li><a href="#">보나츠</a></li>
+                                        <li><a href="#">바치</a></li>
+                                        <li><a href="#">호아따따</a></li>
+                                        <li><a href="#">해피프린스</a></li>
+                                        <li><a href="#">오브오구</a></li>
+                                        <li><a href="#">세아랑</a></li>
+                                    </ul>
+                            </div>
+                                
+                            </div> 
+                       </div>
+                    </div> 
+                         
+                     <div class="menu-panel" data-key="BEAUTY">
+                          <div class="sub-wrap">
+                            <div class="sub-box">
+                                <div class="sub3-wrap">
+                                <ul class="sub3 activ">
+                                    <li><a href="#">ALL</a></li>
+                                    <li><a href="#">NEW</a></li>
+                                    <li><a href="#">단독</a></li>
+                                    <li><a href="#">해외브랜드</a></li>
+                                    <li><a href="#">선물세트</a></li>
+                                    <li><a href="#">스킨케어</a></li>
+                                    <li><a href="#">메이크업</a></li>
+                                    <li><a href="#">선케어</a></li>
+                                    <li><a href="#">프래그런스</a></li>
+                                    <li><a href="#">바디케어</a></li>
+                                    <li><a href="#">헤어케어</a></li>
+                                    <li><a href="#">뷰티소품/기기</a></li>
+                                    <li><a href="#">건강식품</a></li>
+                                    <li><a href="#">맨즈뷰티</a></li>
+                                </ul>
+                                </div>
+
+                                <div class="top-brand-menu">
+                                <h3>TOP BRAND</h3>
+                                    <ul>
+                                        <li><a href="#">야오</a></li>
+                                        <li><a href="#">라우쉬</a></li>
+                                        <li><a href="#">꾸셀</a></li>
+                                        <li><a href="#">플르부아</a></li>
+                                        <li><a href="#">정샘물</a></li>
+                                        <li><a href="#">디오디너리</a></li>
+                                        <li><a href="#">위글위글</a></li>
+                                        <li><a href="#">프로티원</a></li>
+                                        <li><a href="#">지비에이치</a></li>
+                                        <li><a href="#">바나코</a></li>
+                                        <li><a href="#">오프라 코스메틱</a></li>
+                                        <li><a href="#">페이스팩토리</a></li>
+                                    </ul>
+                            </div>
+                            </div>
+                          </div>  
+                        </div>
+                 
+               
+      
+                    <div class="menu-panel" data-key="LIVING">
+                        <div class="sub-wrap">
+                           <div class="sub-box"> 
+                            <ul class="sub2">
+                                <li><a href="#">가구,인테리어</a></li>
+                                <li><a href="#">주방,생활</a></li>
+                                <li><a href="#">레저</a></li>
+                            </ul>
+
+                         <div class="sub3-wrap">
+                                <ul class="sub3 activ">
+                                    <li><a href="#">ALL</a></li>
+                                    <li><a href="#">NEW</a></li>
+                                    <li><a href="#">단독</a></li>
+                                    <li><a href="#">해외브랜드</a></li>
+                                    <li><a href="#">침구</a></li>
+                                    <li><a href="#">홈패브릭</a></li>
+                                    <li><a href="#">가구</a></li>
+                                    <li><a href="#">조명</a></li>
+                                    <li><a href="#">홈데코</a></li>
+                                    <li><a href="#">가구</a></li>
+                                    <li><a href="#">스테이셔너리</a></li>
+                                    <li><a href="#">가드닝</a></li>
+                                    <li><a href="#">아트/디자인</a></li>
+                                    <li><a href="#">책/음반</a></li>
+                                    <li><a href="#">선물하기</a></li>
+                                </ul> 
+
+                                <ul class="sub3">
+                                    <li><a href="#">ALL</a></li>
+                                    <li><a href="#">NEW</a></li>
+                                    <li><a href="#">단독</a></li>
+                                    <li><a href="#">그릇/커트러리</a></li>
+                                    <li><a href="#">컵/잔/텀블러</a></li>
+                                    <li><a href="#">욕실</a></li>
+                                    <li><a href="#">조리도구</a></li>
+                                    <li><a href="#">냄비/팬/솥</a></li>
+                                    <li><a href="#">홈프래그런스</a></li>
+                                    <li><a href="#">저장용기/도시락</a></li>
+                                    <li><a href="#">생활수납/정리</a></li>
+                                    <li><a href="#">주방잡화</a></li>
+                                    <li><a href="#">주방수납/정리</a></li>
+                                    <li><a href="#">생필품</a></li>
+                                    <li><a href="#">기타생활</a></li>
+                                    <li><a href="#">테이블데코</a></li>
+                                    <li><a href="#">반려동물</a></li>
+                                    <li><a href="#">선물하기</a></li>
+                                </ul>
+
+                                 <ul class="sub3">
+                                    <li><a href="#">ALL</a></li>
+                                    <li><a href="#">NEW</a></li>
+                                    <li><a href="#">요가/필라테스</a></li>
+                                    <li><a href="#">수영</a></li>
+                                    <li><a href="#">러닝</a></li>
+                                    <li><a href="#">테니스</a></li>
+                                    <li><a href="#">피트니스</a></li>
+                                    <li><a href="#">캠핑</a></li>
+                                    <li><a href="#">등산/하이킹</a></li>
+                                    <li><a href="#">골프</a></li>
+                                    <li><a href="#">자전거</a></li>
+                                    <li><a href="#">여행</a></li>
+                                    <li><a href="#">발레</a></li>
+                                    <li><a href="#">기타스포츠</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="top-brand-menu">
+                                <h3>TOP BRAND</h3>
+                                    <ul>
+                                        <li><a href="#">핀카</a></li>
+                                        <li><a href="#">마틸라</a></li>
+                                        <li><a href="#">호무로</a></li>
+                                        <li><a href="#">비비홈</a></li>
+                                        <li><a href="#">소로이샵</a></li>
+                                        <li><a href="#">스크럽 대디</a></li>
+                                        <li><a href="#">소리야나기</a></li>
+                                        <li><a href="#">리템</a></li>
+                                        <li><a href="#">부디무드라</a></li>
+                                        <li><a href="#">미나수</a></li>
+                                        <li><a href="#">프론투라인</a></li>
+                                        <li><a href="#">에이치덱스</a></li>
+                                    </ul>
+                            </div>
+                          </div> 
+                        </div>
+                    </div>
+                     
+
+                     <div class="menu-panel" data-key="TECH">
+                        <div class="sub-wrap">     
+                          <div class="sub-box">
+                            <ul class="sub2">
+                                <li><a href="#">가전</a></li>
+                                <li><a href="#">컴퓨터,디지털</a></li>
+                            </ul>
+
+                             <div class="sub3-wrap">
+                                <ul class="sub3 activ">
+                                    <li><a href="#">ALL</a></li>
+                                    <li><a href="#">NEW</a></li>
+                                    <li><a href="#">주방가전</a></li>
+                                    <li><a href="#">이미용가전</a></li>
+                                    <li><a href="#">계절가전</a></li>
+                                    <li><a href="#">생활가전</a></li>
+                                    <li><a href="#">영상가전</a></li>
+                                    <li><a href="#">청소기</a></li>
+                                    <li><a href="#">세탁기/건조기</a></li>
+                                    <li><a href="#">건강가전</a></li>
+                                    <li><a href="#">리퍼브</a></li>
+                                </ul> 
+
+                                <ul class="sub3">
+                                    <li><a href="#">ALL</a></li>
+                                    <li><a href="#">NEW</a></li>
+                                    <li><a href="#">모바일/웨어러블</a></li>
+                                    <li><a href="#">모바일 액세서리</a></li>
+                                    <li><a href="#">PC/노트북</a></li>
+                                    <li><a href="#">게임</a></li>
+                                    <li><a href="#">음향기기</a></li>
+                                    <li><a href="#">사진</a></li>
+                                    <li><a href="#">자동차용품/장난감</a></li>
+                                    <li><a href="#">저장장치</a></li>
+                                    <li><a href="#">스마트모빌리티</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="top-brand-menu">
+                                <h3>TOP BRAND</h3>
+                                    <ul>
+                                        <li><a href="#">위글위글</a></li>
+                                        <li><a href="#">신지모루</a></li>
+                                        <li><a href="#">카이퍼</a></li>
+                                        <li><a href="#">프로쉬</a></li>
+                                        <li><a href="#">오아</a></li>
+                                        <li><a href="#">[공식몰]카카오프렌즈</a></li>
+                                        <li><a href="#">한국후지필름 인스탁스</a></li>
+                                        <li><a href="#">레토</a></li>
+                                        <li><a href="#">그래그</a></li>
+                                        <li><a href="#">Apple</a></li>
+                                        <li><a href="#">오센트</a></li>
+                                        <li><a href="#">유제</a></li>
+                                    </ul>
+                            </div>
+                          </div>
+                       </div>
+                    </div> 
+
+                    <div class="menu-panel" data-key="FOOD">
+                        <div class="sub-wrap">         
+                            <div class="sub-box">
+                                <div class="sub3-wrap">
+                                <ul class="sub3 activ">
+                                    <li><a href="#">ALL</a></li>
+                                    <li><a href="#">NEW</a></li>
+                                    <li><a href="#">음료</a></li>
+                                    <li><a href="#">이너뷰티/식단관리</a></li>
+                                    <li><a href="#">가공식품</a></li>
+                                    <li><a href="#">선물세트</a></li>
+                                    <li><a href="#">잼/꿀/오일</a></li>
+                                    <li><a href="#">신선/냉장</a></li>
+                                </ul>
+                                </div>
+
+                            <div class="top-brand-menu">
+                                <h3>TOP BRAND</h3>
+                                    <ul>
+                                        <li><a href="#">맛꾼</a></li>
+                                        <li><a href="#">봄날엔</a></li>
+                                        <li><a href="#">모모스커피</a></li>
+                                        <li><a href="#">분다버그</a></li>
+                                        <li><a href="#">이야이야앤프렌즈</a></li>
+                                        <li><a href="#">프로티원</a></li>
+                                        <li><a href="#">아리울떡공방</a></li>
+                                        <li><a href="#">쌍계명차</a></li>
+                                        <li><a href="#">소미노</a></li>
+                                        <li><a href="#">파지티브호텔</a></li>
+                                        <li><a href="#">사일로 브루어리</a></li>
+                                        <li><a href="#">워커비</a></li>
+                                    </ul>
+                            </div>
+                            </div>
+                        </div>
+                    </div>   
+                    
+                <div class="menu-panel" data-key="CULTURE">
+                    <div class="sub-wrap">
+                        <div class="sub-box">    
+                            <div class="sub3-wrap">
+                                <ul class="sub3 activ">
+                                    <li><a href="#">ALL</a></li>
+                                    <li><a href="#">NEW</a></li>
+                                    <li><a href="#">티켓</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="top-brand-menu popular-events">
+                                <h3>POPULAR EVENTS</h3>
+                                    <ul>
+                                        <li><a href="#">연준 by 페트라 콜린스 with 보그 살롱</a></li>
+                                        <li><a href="#">[5차티켓] 워터밤 서울 2026</a></li>
+                                        <li><a href="#">연준 by 페트라 콜린스 사진전 머치 세트</a></li>
+                                        <li><a href="#">원유니버스페스티벌 2026</a></li>
+                                        <li><a href="#">2026 Rising Connection vol.2 feat. Emerge Music</a></li>
+                                        <li><a href="#">[단독판매] 뮤지컬 서편제</a></li>
+                                        <li><a href="#">마이아트뮤지엄 원그로브점</a></li>
+                                        <li><a href="#">고고학 단독 공연 [ISSUE NO.6 : ANNIVERSARY VOL.10] </a></li>
+                                    </ul>
+                            </div>
+                        </div>              
+                    </div>
+                  </div>
+                  
+                  <div class="menu-panel" data-key="EARTH">
+                    <div class="sub-wrap">
+                        <div class="sub-box">
+                            <div class="sub3-wrap">
+                                <ul class="sub3">
+                                    <li><a href="#">EARTH 전체</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+
+               
+            </div> 
+         </div>
+        </nav> 
+    
+
+    <section class="mainbn_wrap">
+        <ul class="mob-mainbn">
+
+            <li><img src="img_mtop/main bn2.png" alt="배너1"></li>
+            <li><img src="img_mtop/main bn1.png" alt="배너2"></li>
+            <li><img src="img_mtop/main bn3.png" alt="배너3"></li>
+            <li><img src="img_mtop/main bn4.png" alt="배너4"></li>
+            <li><img src="img_mtop/main bn5.png" alt="배너5"></li>
+            <li><img src="img_mtop/main bn6.png" alt="배너6"></li>
+            <li><img src="img_mtop/main bn7.png" alt="배너7"></li>
+            <li><img src="img_mtop/main bn8.png" alt="배너8"></li>
+            <li><img src="img_mtop/main bn9.png" alt="배너9"></li>
+        </ul>
+
+        <ul class="ta-mainbn">
+            <li>
+                <img src="img_mtop/main bn1.png" alt="배너1">
+                <img src="img_mtop/main bn2.png" alt="배너2">
+            </li>
+
+            <li>
+                <img src="img_mtop/main bn3.png" alt="배너3">
+                <img src="img_mtop/main bn4.png" alt="배너4">
+            </li>
+
+            <li>
+                <img src="img_mtop/main bn5.png" alt="배너5">
+                <img src="img_mtop/main bn6.png" alt="배너6">
+            </li>
+
+            <li>
+                <img src="img_mtop/main bn7.png" alt="배너7">
+                <img src="img_mtop/main bn8.png" alt="배너8">
+            </li>
+
+            <li>
+                <img src="img_mtop/main bn9.png" alt="배너9">
+                <img src="img_mtop/main bn10.png" alt="배너10">
+            </li>
+        </ul>
+
+        <div class="pc-mainbn">
+
+         <ul class="bn-track">
+            <li>
+                <img src="img_mtop/pcbn1.png" alt="배너1">
+                <img src="img_mtop/pcbn2.png" alt="배너2">
+                <img src="img_mtop/pcbn3.png" alt="배너3">
+                <img src="img_mtop/pcbn4.png" alt="배너4">
+                <img src="img_mtop/pcbn5.png" alt="배너5">
+                <img src="img_mtop/pcbn6.png" alt="배너6">
+            </li>
+        
+
+            <li>
+                <img src="img_mtop/pcbn7.png" alt="배너7">
+                <img src="img_mtop/pcbn8.png" alt="배너8">
+                <img src="img_mtop/pcbn9.png" alt="배너9">
+                <img src="img_mtop/pcbn10.png" alt="배너10">
+                <img src="img_mtop/pcbn11.png" alt="배너11">
+                <img src="img_mtop/pcbn12.png" alt="배너12">
+            </li>
+
+            <li>
+                <img src="img_mtop/pcbn13.webp" alt="배너13">
+                <img src="img_mtop/pcbn14.webp" alt="배너14">
+                <img src="img_mtop/pcbn15.webp" alt="배너15">
+                <img src="img_mtop/pcbn16.webp" alt="배너16">
+                <img src="img_mtop/pcbn17.webp" alt="배너17">
+                <img src="img_mtop/pcbn18.webp" alt="배너18">
+            </li>
+         </ul>
+        
+        </div>
+    </section>
+
+
+    <section class="taste_keyword">
+        <div class="brandname">
+            <div>
+                <h2>29CM 큐레이션</h2>
+            </div>
+                <p>지금 사람들이 관심 있게 보는 키워드</p>
+        </div>
+
+        <div class="keyword-grid">
+            <a href="keyword-pick.html">
+                <strong>지금,<br>29CM가 고른 것</strong>
+                <span>주목할 브랜드와 아이템</span>
+            </a>
+            <a href="keyword-pick.html">
+                <strong>오래 쓰고,<br>자주 찾게 될 것</strong>
+                <span>기본템·클래식 아이템 모음</span>
+            </a>
+            <a href="keyword-pick.html">
+                <strong>이번 시즌,<br>우리가 고른 것들</strong>
+                <span>시즌 추천 스타일</span>
+            </a>
+            <a href="keyword-pick.html">
+                <strong>눈여겨볼<br>새로운 발견</strong>
+                <span>신규 브랜드·신상품 큐레이션</span>
+            </a>
+            <a href="keyword-pick.html">
+                <strong>지금 많이 찾는<br>취향 모음</strong>
+                <span>인기 키워드 라이프스타일 추천</span>
+            </a>
+            <a href="keyword-pick.html">
+                <strong>일상을 채우는<br>선택</strong>
+                <span>리빙·라이프 아이템 추천</span>
+            </a>
+        </div>
+    </section>
+
+    <section class="coupon-banner">
+        <img src="img_mtop/coupon.png" alt="" class="coupon-bg">
+
+        <div class="coupon-text">
+            <p>신규 회원을 위한</p>
+            <h2>10% 쿠폰</h2>
+            <span>WELCOME COUPON</span>
+            <a href="#">쿠폰 받기</a>
+        </div>
+    </section>
+
+
+    <section class="editor_pick"> <!--pc만-->
+      
+        <div class="editorname">
+            <div>
+                <h2>오늘의 에디터 픽 </h2>
+
+                <div class="ebtn">
+                    <a href="#" class="prev" aria-label="이전 에디터 픽 보기">
+                        <img src="img_today/Back To.png" alt="" >
+                    </a>
+
+                    <a href="#" class="next" aria-label="다음 에디터 픽 보기">
+                        <img src="img_today/Next Page.png" alt="">
+                    </a>                    
+                </div>
+            </div>
+
+            <p>에디터가 직접 고른 취향 큐레이션</p>   
+        </div>
+
+      <div class="editorwrap">
+       <div class="edigroup active">  
+        <div class="edi">
+            <img src="img_today/pc_edi_plz.png" alt="플리즈프로젝트">
+
+            <div class="editext">
+                <p>PLZPROJECT</p>
+                <p class="ediname">플리즈프로젝트</p>
+
+                <p>"패턴으로 완성하는 봄"</p>
+            </div>
+
+         </div>
+
+         <div class="edi">
+            <img src="img_today/pc_edi_frantic.png" alt="프랜틱 서비스">
+
+            <div class="editext">
+                <p>FRANTICSERVICE</p>
+                <p class="ediname">프랜틱 서비스</p>
+
+            <p>"클래식한 감성을 위트있게"</p>
+            </div>
+         </div>
+
+         <div class="edi">
+            <img src="img_today/pc_edi_flct.webp" alt="플러피시트러스">
+
+            <div class="editext">
+                <p>FLCT</p>
+                <p class="ediname">플러피시트러스</p>
+            
+            <p>"편안한 아름다움을 담아"</p>
+            </div>
+         </div>
+
+         <div class="edi">
+            <img src="img_today/pc_edi_ni.png" alt="나이키">
+
+            <div class="editext">
+                <p>NIKE</p>
+                <p class="ediname">나이키</p>
+
+            <p>"경쾌한 봄의 리듬"</p>
+            </div>
+         </div>
+       </div>
+
+       <div class="edigroup">  
+        <div class="edi">
+            <img src="img_today/pc_edi_ch.png" alt="챔피온">
+
+            <div class="editext">
+                <p>CHAMPION</p>
+                <p class="ediname">챔피온</p>
+
+                <p>"편안하게 빛나는 일상"</p>
+            </div>
+
+        </div>
+
+        <div class="edi">
+            <img src="img_today/pc_edi_out.webp" alt="아웃스탠딩">
+
+            <div class="editext">
+                <p>OUTSTANDING</p>
+                <p class="ediname">아웃스탠딩</p>
+
+            <p>"여름의 네 번째 이야기"</p>
+            </div>
+        </div>
+
+        <div class="edi">
+            <img src="img_today/pc_edi_fri.webp" alt="프리버07">
+
+            <div class="editext">
+                <p>FRIVER07</p>
+                <p class="ediname">프리버07</p>
+            
+            <p>"햇빛이 스며드는 여름"</p>
+            </div>
+        </div>
+
+        <div class="edi">
+            <img src="img_today/pc_edi_o.webp" alt="오끼뜨">
+
+            <div class="editext">
+                <p>oggitt</p>
+                <p class="ediname">오끼뜨</p>
+
+                <p>"옷깃만 스쳐도 인연 "</p>
+            </div>
+        </div>
+       </div>
+
+      </div>   
+    </section>
+
+    <section class="brand_story"> <!--pc만-->
+        <div class="brandname">
+            <div>
+                <h2>브랜드를말하다</h2>
+                <a href="#">전체보기 ></a>
+            </div>
+
+            <p>취향을 만드는 브랜드 이야기</p>
+        </div>
+
+        <div class="brandwrap">
+            <div class="brandgroup">
+                <img src="img_story/pc_brand_lu.png" alt="루시루즈 브랜드 이미지">
+
+                <div class="bstext">
+                    <ul class="bsname">
+                        <li><strong>Lucir zu</strong></li>
+                        <li>루시루즈</li>
+                    </ul>
+
+                    <p>눈부신 날을 위한 루시르주는 우아한 분위기에 독창적 아름다움을 쌓아올립니다. 섬세한 질감과 독특한 소재로 데일리부터 브라이덜에 필요한 로맨틱을 담아냅니다.</p>
+                </div>
+
+                <div class="bsimg">
+                    <img src="img_story/pc_brand_lu1.webp" alt="루시루즈 브랜드 이미지">
+                    <img src="img_story/pc_brand_lu2.png" alt="루시루즈 브랜드 이미지">
+                    <img src="img_story/pc_brand_lu3.png" alt="루시루즈 브랜드 이미지">
+                </div>
+            </div>
+         
+
+            <div class="brandgroup">
+                <img src="img_story/pc_brand_gr.webp" alt="그로브 브랜드 이미지">
+
+                <div class="bstext">
+                    <ul class="bsname">
+                        <li><strong>GROVE</strong></li>
+                        <li>그로브</li>
+                    </ul>
+
+                    <p>그로브는 담백하고 클래식한 스타일의 컨템포러리 캐주얼을 베이스로, 
+                    1960년대 오리지널 빈티지를 재해석한 브랜드입니다. 시간이 갈수록 
+                    자연스러운 멋스러움을 더하는 그로브를 만나보세요.</p>
+                </div>
+
+                <div class="bsimg">
+                    <img src="img_story/pc_brand_gr1.webp" alt="그로브 브랜드 이미지">
+                    <img src="img_story/pc_brand_gr2.png" alt="그로브 브랜드 이미지">
+                    <img src="img_story/pc_brand_gr3.png" alt="그로브 브랜드 이미지">
+                </div>
+           </div>
+     
+
+
+            <div class="brandgroup">
+                <img src="img_story/pc_brand_ca.webp" alt="케일 브랜드 이미지">
+
+                <div class="bstext">
+                    <ul class="bsname">
+                        <li><strong>CAYL</strong></li>
+                        <li>케일</li>
+                    </ul>
+
+                    <p>2011년 클라이밍으로 시작해,  현재는 일상과 아웃도어의 경계를 허물기 위해 아웃도어 액티비티를 위한 캐주얼 아이템을 제안합니다.
+                        <br>
+                    </p>
+                </div>
+
+                <div class="bsimg">
+                    <img src="img_story/pc_brand_ca1.png" alt="케일 브랜드 이미지">
+                    <img src="img_story/pc_brand_ca2.png" alt="케일 브랜드 이미지">
+                    <img src="img_story/pc_brand_ca3.png" alt="케일 브랜드 이미지">
+                </div>
+            </div>
+   
+
+            <div class="brandgroup">
+                <img src="img_story/pc_brand_pa.webp" alt="파르티멘토 우먼 브랜드 이미지">
+
+                <div class="bstext">
+                    <ul class="bsname">
+                        <li><strong>PARTIMENTO WOMMEN</strong></li>
+                        <li>파르티멘토 우먼</li>
+                    </ul>
+
+                    <p>기본에 충실하면서도 각자의 개성이 담긴
+                    영 캐주얼 컨템퍼러리 무드를 제안합니다.</p>
+                </div>
+
+                <div class="bsimg">
+                    <img src="img_story/pc_brand_pa1.webp" alt="파르티멘토 우먼 브랜드 이미지">
+                    <img src="img_story/pc_brand_pa2.png" alt="파르티멘토 우먼 브랜드 이미지">
+                    <img src="img_story/pc_brand_pa3.png" alt="파르티멘토 우먼 브랜드 이미지">
+                </div>
+            </div>
+    
+            <div class="brandgroup">
+                <img src="img_story/pc_brand_tek.png" alt="텍토 브랜드 이미지">
+
+                <div class="bstext">
+                    <ul class="bsname">
+                        <li><strong>Tekto</strong></li>
+                        <li>텍토</li>
+                    </ul>
+
+                    <p>자연스러운 편안함 속,<br> 텍토만의 캐주얼한 무드를 담아냈습니다.
+                    평범한 하루에 취향을 더해보세요</p>
+                </div>
+
+                <div class="bsimg">
+                    <img src="img_story/pc_brand_tek1.webp" alt="텍토 브랜드 이미지">
+                    <img src="img_story/pc_brand_tek2.png" alt="텍토 브랜드 이미지">
+                    <img src="img_story/pc_brand_tek3.png" alt="텍토 브랜드 이미지">
+                </div>
+            </div>
+    
+
+   
+            <div class="brandgroup">
+                <img src="img_story/pc_brand_ovhee.webp" alt="오브히 브랜드 이미지">
+
+                <div class="bstext">
+                    <ul class="bsname">
+                        <li><strong>OVHEE</strong></li>
+                        <li>오브히</li>
+                    </ul>
+
+                    <p>오브히는 일상에 페미닌 무드를 더하는 퍼스널 가방 브랜드입니다.
+                    여유롭고 차분한 라이프스타일을 위한 제품을 선보입니다.</p>
+                </div>
+
+                <div class="bsimg">
+                    <img src="img_story/pc_brand_ovhee1.webp" alt="오브히 브랜드 이미지">
+                    <img src="img_story/pc_brand_ovhee2.png" alt="오브히 브랜드 이미지">
+                    <img src="img_story/pc_brand_ovhee3.png" alt="오브히 브랜드 이미지">
+                </div>
+            </div>
+     
+
+          </div>
+        </div>
+
+    </section>
+
+     <section class="living-break"> <!--pc만-->
+         <div class="living-break-img">
+            <img src="img_livign.etc/break_img.jpg" alt="">
+        </div>
+
+        <div class="living-break-text">
+            <p>Living Collection</p>
+            <h2>공간에 머무는 취향</h2>
+            <span>감각적인 리빙 오브젝트로<br>
+                완성하는 오늘의 공간</span>
+
+            <a href="#">View More →</a>
+        </div>
+    </section>
+
+    <section class="living">
+        <div class="licate">
+            <ul role="tablist" aria-label="추천 상품 분류">
+                <li data-target="box1" class="active" role="tab" tabindex="0" aria-selected="true">리빙</li>
+                <li data-target="box2" role="tab" tabindex="0" aria-selected="false">문구</li>
+                <li data-target="box3" role="tab" tabindex="0" aria-selected="false">테크</li>
+                <li data-target="box4" role="tab" tabindex="0" aria-selected="false">뷰티</li>
+                <li data-target="box5" role="tab" tabindex="0" aria-selected="false">푸드</li>
+            </ul>
+        </div>
+
+        <div class="livingwrap active" id="box1" role="tabpanel" aria-hidden="false">
+            <div class="ligroup">
+                <img src="img_livign.etc/pc_living1.webp" alt="이구어퍼스트로피 머들디퓨저 200ml 상품 이미지">
+
+                <div class="living-info">
+                    <div class="liname">
+                        <strong>이구어퍼스트로피</strong>
+                    </div>
+                    <p>[NEW]머들디퓨저 200ml(6종)</p>
+
+                    <div class="liprice">
+                        <ul>
+                            <li class="pr_b">49,000원</li>
+                            <li><span>34%</span>32,220원</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+           
+
+            <div class="ligroup">
+                <img src="img_livign.etc/pc_living2.webp" alt="보웰 몽글몽글 양털 뽀글이 쿠션커버 러브빈즈 상품 이미지">
+
+                <div class="living-info">
+                    <div class="liname">
+                        <strong>보웰</strong>
+                    </div>
+
+                    <p>[BWTZ]몽글몽글 양털 뽀글이 쿠션커버 러브빈즈 택1</p>
+
+                    <div class="liprice">
+                        <ul>
+                            <li class="pr_b">28,000원</li>
+                            <li><span>21%</span>22,000원</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ligroup">
+                <img src="img_livign.etc/pc_living3.webp" alt="모머위켄드 모머홈 커트러리 단품 상품 이미지">
+
+                <div class="living-info">
+                    <div class="liname">
+                        <strong>모머위켄드</strong>
+                    </div>
+                    <p>모머홈 커트러리 단품
+                        <br>(3 OPTIONS)</p>
+
+                    <div class="liprice">
+                        <ul>
+                            <li class="pr_b">31,900원</li>
+                            <li><span>38%</span>19,920원</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ligroup">
+                <img src="img_livign.etc/pc_living4.webp" alt="루메나조명 SPACES MUTE EDITION Portable lamp 상품 이미지">
+
+                <div class="living-info">
+                    <div class="liname">
+                        <strong>루메나조명</strong>
+                    </div>
+                    <p>SPACES MUTE EDITION Portable lamp(roof)</p>
+
+                    <div class="liprice">
+                        <ul>
+                            <li class="pr_b">39,000원</li>
+                            <li><span>5%</span>37,900원</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ligroup">
+                <img src="img_livign.etc/pc_living5.webp" alt="로파 서울 LUCKY PONY 포니 액막이 오너먼트 상품 이미지">
+
+                <div class="living-info">
+                    <div class="liname">
+                        <strong>로파 서울</strong>
+                    </div>
+                    <p>LUCKY PONY 포니 액막이 오너먼트</p>
+
+                    <div class="liprice">
+                        <ul>
+                            <li class="pr_b">25,500원</li>
+                            <li><span>38%</span>19,920원</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ligroup">
+                <img src="img_livign.etc/pc_living6.webp" alt="타월로지스트 튈 페이스 타월 40x80cm - 옐로우 상품 이미지">
+
+                <div class="living-info">
+                    <div class="liname">
+                        <strong>타월로지스트</strong>
+                    </div>
+                    <p>[29CM단독] 튈 페이스 타월 40x80cm - 옐로우</p>
+
+                    <div class="liprice">
+                        <ul>
+                            <li class="pr_b">14,000원</li>
+                            <li><span>28%</span>12,960원</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ligroup">
+                <img src="img_livign.etc/pc_living7.webp" alt="포에트리앤스페이스 노트정리함 상품 이미지">
+
+                <div class="living-info">
+                    <div class="liname">
+                        <strong>포에트리앤스페이스</strong>
+                    </div>
+                    <p>The Bindery / 노트정리함 / 기록모음집</p>
+                    
+                  <div class="liprice">
+                    <ul>
+                        <li class="nodiscount">48,000원</li>
+                    </ul>
+                  </div>
+                </div>
+            </div>
+
+            <div class="ligroup">
+                <img src="img_livign.etc/pc_living8.webp" alt="메종드룸룸 구름 쿠션솜 상품 이미지">
+
+                <div class="living-info">
+                    <div class="liname">
+                        <strong>메종드룸룸</strong>
+                    </div>
+                    <p>구름 쿠션솜 3size</p>
+
+                    <div class="liprice">
+                        <ul>
+                            <li class="nodiscount">9,500원</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ligroup">
+                <img src="img_livign.etc/pc_living9.webp " alt="타블도트 모닝 플레이트 3P세트 상품 이미지">
+
+                <div class="living-info">
+                    <div class="liname">
+                        <strong>타블도트</strong>
+                    </div>
+                    <p>타블도트 모닝 플레이트 3P세트 3type</p>
+
+                    <div class="liprice">
+                        <ul>
+                            <li class="pr_b">25,500원</li>
+                            <li><span>10%</span>23,010원</li>
+                        </ul>
+                    </div>
+                </div>
+            </div> 
+
+            <div class="ligroup">
+                <img src="img_livign.etc/pc_living10.webp " alt="고그린 오브젝트 강아지 티슈 케이스 상품 이미지">
+
+                <div class="living-info">
+                    <div class="liname">
+                        <strong>고그린 오브젝트</strong>
+                    </div>
+                    <p>[선물포장]쪼꼬미 꼬질이 강아지 티슈 케이스 두루마리 휴지 집들이</p>
+
+                    <div class="liprice">
+                        <ul>
+                            <li class="pr_b">28,900원</li>
+                            <li><span>15%</span>24,500원</li>
+                        </ul>
+                    </div>
+                </div>
+            </div> 
+
+            <div class="ligroup">
+                <img src="img_livign.etc/pc_living11.webp " alt="파피요트 Refresh Pillow Cover 12 상품 이미지">
+
+                <div class="living-info">
+                    <div class="liname">
+                        <strong>파피요트</strong>
+                    </div>
+                    <p>Refresh Pillow Cover 12</p>
+
+                    <div class="liprice">
+                        <ul>
+                            <li class="nodiscount">24,500원</li>
+                        </ul>
+                    </div>
+                </div>
+            </div> 
+
+            <div class="ligroup">
+                <img src="img_livign.etc/pc_living12.webp " alt="소로이샵 여주 수작 손잡이 소주잔 상품 이미지">
+
+                <div class="living-info">
+                    <div class="liname">
+                        <strong>소로이샵</strong>
+                    </div>
+                    <p>여주 수작 손잡이 소주잔 50ml 4color 미니고블렛</p>
+
+                    <div class="liprice">
+                        <ul>
+                            <li class="pr_b">6,900원</li>
+                            <li><span>21%</span>5,440원</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ligroup">
+                <img src="img_livign.etc/pc_living13.webp " alt="핀카 클래식 60수 고밀도 순면 바이오 차렵이불 상품 이미지">
+
+                <div class="living-info">
+                    <div class="liname">
+                        <strong>핀카</strong>
+                    </div>
+                    <p>[29CM 단독]핀카 클래식 60수 고밀도
+                    순면 바이오 차렵이불 2Size 20Colors</p>
+
+                    <div class="liprice">
+                        <ul>
+                            <li class="pr_b">110,000원</li>
+                            <li><span>20%</span>88,000원</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ligroup">
+                <img src="img_livign.etc/pc_living14.webp " alt="토요사사키 사케글라스 상품 이미지">
+
+                <div class="living-info">
+                    <div class="liname">
+                        <strong>토요사사키</strong>
+                    </div>
+                    <p>타카세가와 사케글라스 80ml</p>
+
+                    <div class="liprice">
+                        <ul>
+                            <li class="pr_b">55,000원</li>
+                            <li><span>32%</span>37,400원</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ligroup">
+                <img src="img_livign.etc/pc_living15.webp " alt="아토소 세탁 세제통 천연 리필 소분 용기1L 상품 이미지">
+
+                <div class="living-info">
+                    <div class="liname">
+                        <strong>아토소</strong>
+                    </div>
+                    <p>세탁 세제통 천연 리필 소분 용기1L(라벨포함)</p>
+
+                    <div class="liprice">
+                        <ul>
+                            <li class="pr_b">6,000원</li>
+                            <li><span>18%</span>4,900원</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="ligroup-only1419">
+                <img src="img_livign.etc/pc_living16.png" alt="이도 달항아리 1P 집들이 화병 상품 이미지">
+
+                <div class="living-info">
+                    <div class="liname">
+                        <strong>이도</strong>
+                    </div>
+                    <p>[선물포장] 달항아리 1P(3 colors) 집들이 화병 외국인선물</p>
+
+                    <div class="liprice">
+                        <ul>
+                            <li class="pr_b">50,000원</li>
+                            <li><span>15%</span>42,680원</li>
+                        </ul>
+                    </div>
+                </div>
+            </div> 
+        </div>
+
+        <div class="livingwrap" id="box2" role="tabpanel" aria-hidden="true">
+            <div class="ligroup">
+                <img src="img_livign.etc/s1.webp" alt="로파서울 빈티지 배 문진 상품 이미지">
+
+                <div class="living-info">
+                    <div class="liname">
+                        <strong>로파서울</strong>
+                    </div>
+                    <p>[mixtureshop] 빈티지 배 문진 Pear Paperweight vol.2 (2 sizes)</p>
+
+                    <div class="liprice">
+                        <ul>
+                            <li class="pr_b">45,000원</li>
+                            <li><span>15%</span>38,420원</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+           
+            <div class="ligroup">
+                <img src="img_livign.etc/s2.webp" alt="펫플랜트 스파이럴 스토리지 홀더 상품 이미지">
+
+                <div class="living-info">
+                    <div class="liname">
+                        <strong>펫플랜트</strong>
+                    </div>
+
+                    <p>스파이럴 스토리지 홀더</p>
+
+                    <div class="liprice">
+                        <ul>
+                            <li class="pr_b">19,000원</li>
+                            <li><span>60%</span>7,510</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ligroup">
+                <img src="img_livign.etc/s3.webp" alt="김하찬 코듀로이 도트 토글 단추 파우치 상품 이미지">
+
+                <div class="living-info">
+                    <div class="liname">
+                        <strong>김하찬</strong>
+                    </div>
+                    <p>코듀로이 도트 토글 단추 파우치 - 북파우치 & 아이패드 맥북 가방</p>
+
+                    <div class="liprice">
+                        <ul>
+                            <li class="pr_b">32,000원</li>
+                            <li><span>20%</span>25,600원</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ligroup">
+                <img src="img_livign.etc/s4.webp" alt="김하찬 북 메이트 북커버 백 상품 이미지">
+
+                <div class="living-info">
+                    <div class="liname">
+                        <strong>김하찬</strong>
+                    </div>
+                    <p>북 메이트 북커버 백_8 Colors M/L Size 일반도서 민음사 세문전</p>
+
+                    <div class="liprice">
+                        <ul>
+                            <li class="pr_b">42,000원</li>
+                            <li><span>10%</span>37,800원</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ligroup">
+                <img src="img_livign.etc/s5.webp" alt="큐클리프 타이벡 프라이빗 북커버 상품 이미지">
+
+                <div class="living-info">
+                    <div class="liname">
+                        <strong>큐클리프</strong>
+                    </div>
+                    <p>타이벡 프라이빗 북커버 - Olive (4 Size)</p>
+
+                    <div class="liprice">
+                        <ul>
+                            <li class="nodiscount">25,000원</li>
+                        </ul>
+                   </div>
+                  
+                </div>
+            </div>
+
+            <div class="ligroup">
+                <img src="img_livign.etc/s6.webp" alt="클램 Clam round pencilcase 상품 이미지">
+
+                <div class="living-info">
+                    <div class="liname">
+                        <strong>클램</strong>
+                    </div>
+                    <p>Clam round pencilcase _ Navy and green</p>
+
+                    <div class="liprice">
+                        <ul>
+                            <li class="pr_b">16,500원</li>
+                            <li><span>30%</span>11,550원</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ligroup">
+                <img src="img_livign.etc/s7.webp" alt="낼나 포커스 온 타이머 상품 이미지">
+
+                <div class="living-info">
+                    <div class="liname">
+                        <strong>낼나</strong>
+                    </div>
+                    <p>포커스 온 타이머</p>
+                    
+                  <div class="liprice">
+                    <ul>
+                        <li class="nodiscount">35,000원</li>
+                    </ul>
+                  </div>
+                </div>
+            </div>
+
+            <div class="ligroup">
+                <img src="img_livign.etc/s8.webp" alt="자주 자석 부착형 택배용 세라믹 안전 커터칼 상품 이미지">
+
+                <div class="living-info">
+                    <div class="liname">
+                        <strong>자주</strong>
+                    </div>
+                    <p>[JAJU/자주] 자석 부착형 택배용 세라믹 안전 커터칼_9.5x2.8x1.5CM</p>
+
+                    <div class="liprice">
+                        <ul>
+                            <li class="pr_b">6,900원</li>
+                            <li><span>20%</span>5,520원</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ligroup">
+                <img src="img_livign.etc/s9.webp " alt="지비에이치 스테인리스 스틸 명함 케이스 상품 이미지">
+
+                <div class="living-info">
+                    <div class="liname">
+                        <strong>지비에이치</strong>
+                    </div>
+                    <p>STAINLESS STEEL CARD HOLDER 스테인리스 스틸 명함 케이스</p>
+
+                    <div class="liprice">
+                        <ul>
+                            <li class="pr_b">18,000원</li>
+                            <li><span>20%</span>14,400원</li>
+                        </ul>
+                    </div>
+                </div>
+            </div> 
+
+            <div class="ligroup">
+                <img src="img_livign.etc/s10.webp " alt="백상점 Normal Note 상품 이미지">
+
+                <div class="living-info">
+                    <div class="liname">
+                        <strong>백상점</strong>
+                    </div>
+                    <p>(NN) Normal Note</p>
+
+                    <div class="liprice">
+                        <ul>
+                            <li class="pr_b">9,000원</li>
+                            <li><span>10%</span>8,100원</li>
+                        </ul>
+                    </div>
+                </div>
+            </div> 
+
+            <div class="ligroup">
+                <img src="img_livign.etc/s11.webp" alt="드림즈 소니엔젤 히퍼 상품 이미지">
+
+                <div class="living-info">
+                    <div class="liname">
+                        <strong>드림즈</strong>
+                    </div>
+                    <p>[드림즈코리아 정품] S/A HIPPERS (소니엔젤 히퍼) - 랜덤</p>
+
+                    <div class="liprice">
+                        <div class="liprice">
+                            <ul>
+                                <li class="nodiscount">11,800원</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+
+            <div class="ligroup"> 
+                <img src="img_livign.etc/s12.webp " alt="피그랩 달팽이 언박싱 커터 귀여운 택배칼 상품 이미지">
+
+                <div class="living-info">
+                    <div class="liname">
+                        <strong>피그랩</strong>
+                    </div>
+                    <p>달팽이 언박싱 커터 귀여운 택배칼</p>
+
+                    <div class="liprice">
+                        <ul>
+                            <li class="pr_b">15,000원</li>
+                            <li><span>11%</span>13,400원</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ligroup">
+                <img src="img_livign.etc/s13.webp" alt="몰댄룩 BLOSSOM ARCHIVE (북커버) 상품 이미지">
+
+                <div class="living-info">
+                    <div class="liname">
+                        <strong>몰댄룩</strong>
+                    </div>
+                    <p>[몰댄룩 X 패치파이] BLOSSOM ARCHIVE (북커버)</p>
+
+                    <div class="liprice">
+
+                        <ul>
+                            <li class="pr_b">46,000원</li>
+                            <li><span>15%</span>39,000원</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ligroup">
+                <img src="img_livign.etc/s14.webp" alt="아쎄스튜디오 Croissant Memo Holder 상품 이미지">
+
+                <div class="living-info">
+                    <div class="liname">
+                        <strong>아쎄스튜디오</strong>
+                    </div>
+                    <p>Croissant Memo Holder (Cinnamon&Plain)</p>
+
+                    <div class="liprice">
+                        <ul>
+                            <li class="pr_b">30,000원</li>
+                            <li><span>10%</span>27,000원</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ligroup">
+                <img src="img_livign.etc/s15.webp" alt="모트모트 [3+2] 스프링북 상품 이미지">
+
+                <div class="living-info">
+                    <div class="liname">
+                        <strong>모트모트</strong>
+                    </div>
+                    <p>[3+2] 스프링북 세로/가로</p>
+
+                    <div class="liprice">
+                        <ul>
+                            <li class="pr_b">6,000원</li>
+                            <li><span>18%</span>4,900원</li>
+                        </ul>
+                    </div>
+                </div>
+            </div> 
+
+            <div class="ligroup-only1419">
+                <img src="img_livign.etc/s16.webp" alt="산로 인더스트리얼 펜슬홀더/L 상품 이미지">
+
+                <div class="living-info">
+                    <div class="liname">
+                        <strong>산로</strong>
+                    </div>
+                    <p>산로 인더스트리얼 펜슬홀더/L FRIENDS SERIE</p>
+
+                    <div class="liprice">
+                        <ul>
+                            <li class="pr_b">43,000원</li>
+                            <li><span>30%</span>30,010원</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+         <div class="livingwrap" id="box3" role="tabpanel" aria-hidden="true">
+            <div class="ligroup">
+                <img src="img_livign.etc/t1.webp" alt="시코 폴딩팬 접이식 선풍기 FLZ-254D 스탠다드형 상품 이미지">
+
+                <div class="living-info">
+                    <div class="liname">
+                        <strong>시코</strong>
+                    </div>
+                    <p>폴딩팬 접이식 선풍기 FLZ-254D 스탠다드형</p>
+
+                    <div class="liprice">
+                        <ul>
+                            <li class="pr_b">209,000원</li>
+                            <li><span>15%</span>179,000원</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+           
+            <div class="ligroup">
+                <img src="img_livign.etc/t2.webp" alt="시코 무선 미니 폴딩팬 탁상형 접이식 선풍기 상품 이미지">
+
+                <div class="living-info">
+                    <div class="liname">
+                        <strong>시코</strong>
+                    </div>
+
+                    <p>[프리오더/29cm단독]_무선 미니 폴딩팬 탁상형 접이식 선풍기</p>
+
+                    <div class="liprice">
+                        <ul>
+                            <li class="nodiscount">159,000원</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ligroup">
+                <img src="img_livign.etc/t3.webp" alt="라이프썸 라이프썸 큐브 멀티탭 3구 4포트 USB C타입 1.8m 상품이미지">
+
+                <div class="living-info">
+                    <div class="liname">
+                        <strong>라이프썸</strong>
+                    </div>
+                    <p>라이프썸 큐브 멀티탭 3구 4포트 USB C타입 1.8m (LFS-HA53) 10종 택1</p>
+
+                    <div class="liprice">
+                        <ul>
+                            <li class="pr_b">49,000원</li>
+                            <li><span>29%</span>35,000원</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ligroup">
+                <img src="img_livign.etc/t4.webp" alt="웰큐어 목 어깨 마사지기 경추 승모근 안마기 상품 이미지">
+
+                <div class="living-info">
+                    <div class="liname">
+                        <strong>웰큐어</strong>
+                    </div>
+                    <p>[웰큐어] 목 어깨 마사지기 경추 승모근 안마기</p>
+
+                    <div class="liprice">
+                        <ul>
+                            <li class="pr_b">129,000원</li>
+                            <li><span>31%</span>89,000원</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ligroup">
+                <img src="img_livign.etc/t5.webp" alt="스메스 미니 전기포트 상품 이미지">
+
+                <div class="living-info">
+                    <div class="liname">
+                        <strong>스메그</strong>
+                    </div>
+
+                    <p>[스메그] 미니 전기포트 크림 KLF05CREU</p>
+
+                    <div class="liprice">
+                        <ul>
+                            <li class="pr_b">198,000원</li>
+                            <li><span>10%</span>178,200원</li>
+                        </ul>
+                   </div>
+                </div>
+            </div>
+
+            <div class="ligroup">
+                <img src="img_livign.etc/t6.webp" alt="르젠 초경량 BLDC 펠티어 냉각 100단 무선 핸디형 선풍기 상품 이미지">
+
+                <div class="living-info">
+                    <div class="liname">
+                        <strong>르젠</strong>
+                    </div>
+                    <p>[예약판매]_초경량 BLDC 펠티어 냉각 100단 무선 핸디형 선풍기 [글레이셔실버]</p>
+
+                    <div class="liprice">
+                       <ul>
+                            <li class="pr_b">79,800원</li>
+                            <li><span>10%</span>71,820원</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ligroup">
+                <img src="img_livign.etc/t7.webp" alt="라이프썸 무선충전 핸디 청소기 상품 이미지">
+
+                <div class="living-info">
+                    <div class="liname">
+                        <strong>라이프썸</strong>
+                    </div>
+                    <p>라이프썸 무선충전 핸디 청소기 (LFS-HA17)</p>
+                    
+                  <div class="liprice">
+                        <ul>
+                            <li class="pr_b">60,000원</li>
+                            <li><span>28%</span>49,000원</li>
+                        </ul>
+                   </div>
+                </div>
+            </div>
+
+            <div class="ligroup">
+                <img src="img_livign.etc/t8.webp" alt="아비오에 NEW LOGO Mint Pink Silver Epoxy Case 상품 이미지">
+
+                <div class="living-info">
+                    <div class="liname">
+                        <strong>아비오에</strong>
+                    </div>
+                    <p>NEW LOGO Mint Pink Silver Epoxy Case</p>
+
+                    <div class="liprice">
+                        <ul>
+                            <li class="pr_b">25,000원</li>
+                            <li><span>5%</span>23,750원</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ligroup">
+                <img src="img_livign.etc/t9.webp " alt="마인올 rosy lace silver glass bumper case 상품 이미지">
+
+                <div class="living-info">
+                    <div class="liname">
+                        <strong>마인올</strong>
+                    </div>
+                    <p>rosy lace silver glass bumper case [normal]</p>
+
+                    <div class="liprice">
+                        <ul>
+                            <li class="pr_b">23,000원</li>
+                            <li><span>10%</span>20,700원</li>
+                        </ul>
+                    </div>
+                </div>
+            </div> 
+
+            <div class="ligroup">
+                <img src="img_livign.etc/t10.webp " alt="홈즈리빙 디얼 셀피모드 투명 빈티지 디지털 카메라 상품 이미지">
+
+                <div class="living-info">
+                    <div class="liname">
+                        <strong>홈즈리빙</strong>
+                    </div>
+                    <p>디얼 셀피모드 투명 빈티지 디지털 카메라</p>
+
+                    <div class="liprice">
+                        <ul>
+                            <li class="pr_b">59,000원</li>
+                            <li><span>37%</span>37,520원</li>
+                        </ul>
+                    </div>
+                </div>
+            </div> 
+
+            <div class="ligroup">
+                <img src="img_livign.etc/t11.webp" alt="Aplle 에어팟 프로 3 상품 이미지">
+
+                <div class="living-info">
+                    <div class="liname">
+                        <strong>Apple</strong>
+                    </div>
+                    <p>에어팟 프로 3 블루투스 이어폰 MFHP4KH/A</p>
+
+                    <div class="liprice">
+                        <div class="liprice">
+                            <ul>
+                                <li class="pr_b">369,000원</li>
+                                <li><span>9%</span>335,790원</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+
+            <div class="ligroup">
+                <img src="img_livign.etc/t12.webp " alt="인스타360 셀피스크린 (라이트형) 상품 이미지">
+
+                <div class="living-info">
+                    <div class="liname">
+                        <strong>인스타360</strong>
+                    </div>
+                    <p>인스타360 셀피스크린 (라이트형)</p>
+
+                    <div class="liprice">
+                        <ul>
+                            <li class="nodiscount">143,000원</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ligroup">
+                <img src="img_livign.etc/t13.webp" alt="그래그 맥세이프 고속충전 하트 보조배터리 상품 이미지">
+
+                <div class="living-info">
+                    <div class="liname">
+                        <strong>그래그</strong>
+                    </div>
+                    <p>그래그 맥세이프 고속충전 하트 보조배터리</p>
+
+                    <div class="liprice">
+                        <ul>
+                            <li class="nodiscount">69,000원</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ligroup">
+                <img src="img_livign.etc/t14.webp" alt="브리츠 브리츠 블루투스 알람 라디오 상품 이미지">
+
+                <div class="living-info">
+                    <div class="liname">
+                        <strong>브리츠</strong>
+                    </div>
+                    <p>브리츠 블루투스 알람 라디오 BA-C1 SOUNDROOM</p>
+
+                    <div class="liprice">
+                        <ul>
+                            <li class="pr_b">81,770원</li>
+                            <li><span>23%</span>62,900원</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ligroup">
+                <img src="img_livign.etc/t15.webp" alt="엑토 저소음 손목보호 무선 버티컬 마우스 상품 이미지">
+
+                <div class="living-info">
+                    <div class="liname">
+                        <strong>엑토</strong>
+                    </div>
+                    <p>엑토 저소음 손목보호 무선 버티컬 마우스 ONMSC-01</p>
+
+                    <div class="liprice">
+                        <ul>
+                            <li class="pr_b">36,000원</li>
+                            <li><span>33%</span>24,000원</li>
+                        </ul>
+                    </div>
+                </div>
+            </div> 
+
+            <div class="ligroup-only1419">
+                <img src="img_livign.etc/t16.webp" alt="이노스페이스원 7인치 이북리더기 범용기 상품 이미지">
+
+                <div class="living-info">
+                    <div class="liname">
+                        <strong>이노스페이스원</strong>
+                    </div>
+                    <p>이노스페이스원_[어댑터+젤리케이스 증정] 마스A (MARS A) 7인치 이북리더기 범용기</p>
+
+                    <div class="liprice">
+                        <ul>
+                            <li class="pr_b">419,000원</li>
+                            <li><span>29%</span>296,100원</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="livingwrap" id="box4" role="tabpanel" aria-hidden="true">
+            <div class="ligroup">
+                <img src="img_livign.etc/b1.webp" alt="지비에이치 센티드 데오스틱 24g 상품 이미지">
+
+                <div class="living-info">
+                    <div class="liname">
+                        <strong>지비에이치</strong>
+                    </div>
+                    <p>센티드 데오스틱 24g (3종 1택)</p>
+
+                    <div class="liprice">
+                        <ul>
+                            <li class="pr_b">28,000원</li>
+                            <li><span>33%</span>18,700원</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+           
+
+            <div class="ligroup">
+                <img src="img_livign.etc/b2.webp" alt="디마프 히어로 마이 퍼스트 세럼 a.k.a.만능기초 155ml 상품 이미지">
+
+                <div class="living-info">
+                    <div class="liname">
+                        <strong>디마프</strong>
+                    </div>
+
+                    <p>히어로 마이 퍼스트 세럼 a.k.a.만능기초 155ml</p>
+
+                    <div class="liprice">
+                        <ul>
+                            <li class="pr_b">34,000원</li>
+                            <li><span>15%</span>28,900원</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ligroup">
+                <img src="img_livign.etc/b3.webp" alt="플르부아 바디로션 250mL 상품 이미지">
+
+                <div class="living-info">
+                    <div class="liname">
+                        <strong>플르부아</strong>
+                    </div>
+                    <p>바디로션 250mL (4종 중 택1)</p>
+
+                    <div class="liprice">
+                        <ul>
+                            <li class="pr_b">30,500원</li>
+                            <li><span>40%</span>18,150원</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ligroup">
+                <img src="img_livign.etc/b4.webp" alt="야오 헤어브러쉬 우드라운드 상품 이미지">
+
+                <div class="living-info">
+                    <div class="liname">
+                        <strong>야오</strong>
+                    </div>
+                    <p>헤어브러쉬 우드라운드</p>
+
+                    <div class="liprice">
+                        <ul>
+                            <li class="pr_b">22,000원</li>
+                            <li><span>33%</span>15,330원</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ligroup">
+                <img src="img_livign.etc/b5.webp" alt="하우스오브밸런스 뉴데이 허브 데오드란트 50ml 상품 이미지">
+
+                <div class="living-info">
+                    <div class="liname">
+                        <strong>하우스오브밸런스</strong>
+                    </div>
+
+                    <p>[5월6일 예약발송]_뉴데이 허브 데오드란트 50ml</p>
+
+                    <div class="liprice"> 
+                        <ul>
+                            <li class="pr_b">29,000원</li>
+                            <li><span>28%</span>20,880원</li>
+                        </ul>
+                   </div>
+                </div>
+            </div>
+
+            <div class="ligroup">
+                <img src="img_livign.etc/b6.webp" alt="리바이탈래쉬 볼륨인핸싱폼 헤어영양제 55ml 상품 이미지">
+
+                <div class="living-info">
+                    <div class="liname">
+                        <strong>리바이탈래쉬</strong>
+                    </div>
+                    <p>볼륨인핸싱폼 헤어영양제 55ml</p>
+
+                    <div class="liprice">
+                       <ul>
+                            <li class="pr_b">198,000원</li>
+                            <li><span>25%</span>148,500원</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ligroup">
+                <img src="img_livign.etc/b7.webp" alt="아로마티카 듀얼 스칼프 케어 샴푸 브러쉬 상품 이미지">
+
+                <div class="living-info">
+                    <div class="liname">
+                        <strong>아로마티카</strong>
+                    </div>
+                    <p>(두피케어) 듀얼 스칼프 케어 샴푸 브러쉬</p>
+                    
+                  <div class="liprice">
+                        <ul>
+                            <li class="pr_b">12,000원</li>
+                            <li><span>19%</span>9,690원</li>
+                        </ul>
+                   </div>
+                </div>
+            </div>
+
+            <div class="ligroup">
+                <img src="img_livign.etc/b8.webp" alt="센티카 버블 핸드워시 500ml 2개입 세트 상품 이미지">
+
+                <div class="living-info">
+                    <div class="liname">
+                        <strong>센티카</strong>
+                    </div>
+                    <p>버블 핸드워시 500ml 2개입 세트</p>
+
+                    <div class="liprice">
+                        <ul>
+                            <li class="pr_b">24,800원</li>
+                            <li><span>49%</span>12,580원</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ligroup">
+                <img src="img_livign.etc/b9.webp " alt="정샘물 정샘물 에센셜 스킨 누더 쿠션 상품 이미지">
+
+                <div class="living-info">
+                    <div class="liname">
+                        <strong>정샘물</strong>
+                    </div>
+                    <p>[NEW 쿨톤컬러] 정샘물 에센셜 스킨 누더 쿠션 (리필포함)(미니 쿠션블러쉬 + 앰플선 5ml 증정)</p>
+
+                    <div class="liprice">
+                        <ul>
+                            <li class="pr_b">48,000원</li>
+                            <li><span>24%</span>36,720원</li>
+                        </ul>
+                    </div>
+                </div>
+            </div> 
+
+            <div class="ligroup">
+                <img src="img_livign.etc/b10.webp " alt="플르부아 핸드워시 300mL 상품 이미지">
+
+                <div class="living-info">
+                    <div class="liname">
+                        <strong>플르부아</strong>
+                    </div>
+                    <p>핸드워시 300ml (4종 중 택1)</p>
+
+                    <div class="liprice">
+                        <ul>
+                            <li class="pr_b">28,000원</li>
+                            <li><span>32%</span>19,040원</li>
+                        </ul>
+                    </div>
+                </div>
+            </div> 
+
+            <div class="ligroup">
+                <img src="img_livign.etc/b11.webp" alt="아르베 비터버터 바디워시 500ml & 바디로션 400ml 세트 상품 이미지">
+
+                <div class="living-info">
+                    <div class="liname">
+                        <strong>아르베</strong>
+                    </div>
+                    <p>[선물추천] 비터버터 바디워시 500ml & 바디로션 400ml 세트</p>
+
+                    <div class="liprice">
+                        <ul>
+                            <li class="pr_b">61,000원</li>
+                            <li><span>54%</span>27,760원</li>
+                        </ul>
+                    </div>
+                </div>
+            </div> 
+
+            <div class="ligroup">
+                <img src="img_livign.etc/b12.webp " alt="플르부아 핸드크림 30ml 상품 이미지">
+
+                <div class="living-info">
+                    <div class="liname">
+                        <strong>플르부아</strong>
+                    </div>
+                    <p>핸드크림 30ml (5종 중 택1)</p>
+
+                    <div class="liprice">
+                        <ul>
+                            <li class="pr_b">12,800원</li>
+                            <li><span>10%</span>11,520원</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ligroup">
+                <img src="img_livign.etc/b13.webp" alt="러쉬 트루 로맨스 65g + 마사지 바 틴 케이스 세트 상품 이미지">
+
+                <div class="living-info">
+                    <div class="liname">
+                        <strong>러쉬</strong>
+                    </div>
+                    <p>[바디케어 BEST] 트루 로맨스 65g + 마사지 바 틴 케이스 세트</p>
+
+                    <div class="liprice">
+                        <ul>
+                            <li class="nodiscount">33,000원</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ligroup">
+                <img src="img_livign.etc/b14.webp" alt="비비앙 오드퍼퓸 월넛크릭그린 EDP 50ml 상품 이미지">
+
+                <div class="living-info">
+                    <div class="liname">
+                        <strong>비비앙</strong>
+                    </div>
+                    <p>[태산 PICK]_오드퍼퓸 월넛크릭그린 EDP 50ml</p>
+
+                    <div class="liprice">
+                        <ul>
+                            <li class="pr_b">150,000원</li>
+                            <li><span>51%</span>73,520원</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ligroup">
+                <img src="img_livign.etc/b15.webp" alt="디오디너리 글리코릭 애시드 7% 엑스폴리에이팅 토너 100ml 상품이미지">
+
+                <div class="living-info">
+                    <div class="liname">
+                        <strong>디오디너리</strong>
+                    </div>
+                    <p>(고강도 AHA 각질제거 토너) 글리코릭 애시드 7% 엑스폴리에이팅 토너 100ml</p>
+
+                    <div class="liprice">
+                        <ul>
+                            <li class="nodiscount">11,300원</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="ligroup-only1419">
+                <img src="img_livign.etc/b16.webp" alt="에스네이처 아쿠아 오아시스 판테알란 카밍패드 60매+리필 30매 2개 상품 이미지">
+
+                <div class="living-info">
+                    <div class="liname">
+                        <strong>에스네이처</strong>
+                    </div>
+                    <p>[총 120매] 에스네이처 아쿠아 오아시스 판테알란 카밍패드 60매+리필 30매 2개</p>
+
+                    <div class="liprice">
+                        <ul>
+                            <li class="pr_b">52,000원</li>
+                            <li><span>31%</span>35,900원</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="livingwrap" id="box5" role="tabpanel" aria-hidden="true">
+            <div class="ligroup">
+                <img src="img_livign.etc/f1.webp" alt="맥파이앤타이거 티머그 & 잎차 선물세트 상품 이미지">
+
+                <div class="living-info">
+                    <div class="liname">
+                        <strong>맥파이앤타이거</strong>
+                    </div>
+                    <p>티머그 & 잎차 선물세트 (4종 택1)</p>
+
+                    <div class="liprice">
+                        <ul>
+                            <li class="pr_b">47,500원</li>
+                            <li><span>10%</span>42,750원</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+           
+
+            <div class="ligroup">
+                <img src="img_livign.etc/f2.webp" alt="봄날엔 봄날엔 초코퐁당 요거꿀떡 상품 이미지">
+
+                <div class="living-info">
+                    <div class="liname">
+                        <strong>봄날엔</strong>
+                    </div>
+
+                    <p>봄날엔 초코퐁당 요거꿀떡 (70 g x 6개입, 총 420 g)</p>
+
+                    <div class="liprice">
+                     <ul>
+                            <li class="pr_b">18,000원</li>
+                            <li><span>12%</span>15,840원</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ligroup">
+                <img src="img_livign.etc/f3.webp" alt="얄라차 포도맛 츄어블 철분제 상품 이미지">
+
+                <div class="living-info">
+                    <div class="liname">
+                        <strong>얄라차</strong>
+                    </div>
+                    <p>포도맛 츄어블 철분제 <달이면 달마다> (12주분/3박스)</p>
+
+                    <div class="liprice">
+                        <ul>
+                            <li class="pr_b">96,000원</li>
+                            <li><span>19%</span>77,760원</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ligroup">
+                <img src="img_livign.etc/f4.webp" alt="이야이야앤프렌즈 미니 올리브 오일 세트 (50ml, 4종) 상품 이미지">
+
+                <div class="living-info">
+                    <div class="liname">
+                        <strong>이야이야앤프렌즈</strong>
+                    </div>
+                    <p>그리스 크레타섬의 올리브 오일 이야이야앤 프렌즈_미니 올리브 오일 세트 (50ml, 4종)</p>
+
+                    <div class="liprice">                  
+                        <ul>
+                            <li class="pr_b">66,000원</li>
+                            <li><span>12%</span>58,000원</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ligroup">
+                <img src="img_livign.etc/f5.webp" alt="모모스커피 드립백 시그니처 블렌드 28개입 상품 이미지">
+
+                <div class="living-info">
+                    <div class="liname">
+                        <strong>모모스커피</strong>
+                    </div>
+
+                    <p>드립백 시그니처 블렌드 28개입</p>
+
+                    <div class="liprice">
+                       <ul>
+                            <li class="pr_b">40,000원</li>
+                            <li><span>21%</span>31,680원</li>
+                        </ul>
+                   </div>
+                </div>
+            </div>
+
+            <div class="ligroup">
+                <img src="img_livign.etc/f6.webp" alt="이삭떡방 동쑥이 동부로 만든 대왕 쑥굴레떡 상품 이미지">
+
+                <div class="living-info">
+                    <div class="liname">
+                        <strong>이삭떡방</strong>
+                    </div>
+                    <p>동쑥이 동부로 만든 대왕 쑥굴레떡 춘천 이삭떡방</p>
+
+                    <div class="liprice">     
+                       <ul>
+                            <li class="pr_b">20,000원</li>
+                            <li><span>10%</span>18,000원</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ligroup">
+                <img src="img_livign.etc/f7.webp" alt="엘리존도 ELIZONDO NO.3 500ML 상품 이미지">
+
+                <div class="living-info">
+                    <div class="liname">
+                        <strong>엘리존도</strong>
+                    </div>
+                    <p>ELIZONDO NO.3 500ML</p>
+                    
+                  <div class="liprice">
+                        <ul>
+                            <li class="pr_b">49,000원</li>
+                            <li><span>10%</span>44,100원</li>
+                        </ul>
+                   </div>
+                </div>
+            </div>
+
+            <div class="ligroup">
+                <img src="img_livign.etc/f8.webp" alt="정남미명과 시그니처 10종 세트 상품 이미지">
+
+                <div class="living-info">
+                    <div class="liname">
+                        <strong>정남미명과</strong>
+                    </div>
+                    <p>[29CM 단독 구성]_정남미명과 시그니처 10종 세트</p>
+
+                    <div class="liprice">
+                        <ul>
+                            <li class="pr_b">38,400원</li>
+                            <li><span>5%</span>32,850원</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ligroup">
+                <img src="img_livign.etc/f9.webp " alt="봄날엔 초코퐁당 초코초코 롤케이크 (400g) 상품 이미지">
+
+                <div class="living-info">
+                    <div class="liname">
+                        <strong>봄날엔</strong>
+                    </div>
+                    <p>봄날엔 초코퐁당 초코초코 롤케이크 (400g)</p>
+
+                    <div class="liprice">
+                       <ul>
+                            <li class="pr_b">28,000원</li>
+                            <li><span>12%</span>24,640원</li>
+                        </ul>
+                    </div>
+                </div>
+            </div> 
+
+            <div class="ligroup">
+                <img src="img_livign.etc/f10.webp " alt="모모스커피 원두 에스쇼콜라 상품 이미지">
+
+                <div class="living-info">
+                    <div class="liname">
+                        <strong>모모스커피</strong>
+                    </div>
+                    <p>원두 에스쇼콜라</p>
+
+                    <div class="liprice">
+                        <ul>
+                            <li class="pr_b">15,000원</li>
+                            <li><span>12%</span>13,2000원</li>
+                        </ul>
+                    </div>
+                </div>
+            </div> 
+
+            <div class="ligroup">
+                <img src="img_livign.etc/f11.webp" alt="타무르 만수르 간식 와인안주 타무르데이츠 14개입 상품 이미지">
+
+                <div class="living-info">
+                    <div class="liname">
+                        <strong>타무르</strong>
+                    </div>
+                    <p>만수르 간식 와인안주 타무르데이츠 14개입</p>
+
+                    <div class="liprice">
+                        <ul>
+                            <li class="pr_b">34,900원</li>
+                            <li><span>12%</span>30,720원</li>
+                        </ul>
+                    </div>
+                </div>
+            </div> 
+
+            <div class="ligroup">
+                <img src="img_livign.etc/f12.webp " alt="잼팟 아침 방울토마토 잼 ACHIM CHERRY TOMATO JAM 상품 이미지">
+
+                <div class="living-info">
+                    <div class="liname">
+                        <strong>잼팟</strong>
+                    </div>
+                    <p>아침 방울토마토 잼 ACHIM CHERRY TOMATO JAM</p>
+
+                    <div class="liprice">
+                        <ul>
+                            <li class="pr_b">15,000원</li>
+                            <li><span>12%</span>13,200원</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ligroup">
+                <img src="img_livign.etc/f13.webp" alt="베러웨러 본질 프로바이오틱스 여성 질 유래 유산균 프로바이오틱스 1box 상품 이미지">
+
+                <div class="living-info">
+                    <div class="liname">
+                        <strong>베러웨러</strong>
+                    </div>
+                    <p>본질 프로바이오틱스 여성 질 유래 유산균 프로바이오틱스 1box</p>
+
+                    <div class="liprice">
+                      <ul>
+                            <li class="pr_b">45,000원</li>
+                            <li><span>42%</span>26,100원</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ligroup">
+                <img src="img_livign.etc/f14.webp" alt="비브리브 꼬박꼬밥 수제 그래놀라 2박스 (25g x 20포) 상품 이미지">
+
+                <div class="living-info">
+                    <div class="liname">
+                        <strong>비브리브</strong>
+                    </div>
+                    <p>꼬박꼬밥 수제 그래놀라 2박스 (25g x 20포)</p>
+
+                    <div class="liprice">
+                        <ul>
+                            <li class="nodiscount">66,000원</li>
+                        </ul>
+                   </div>
+                </div>
+            </div>
+
+            <div class="ligroup">
+                <img src="img_livign.etc/f15.webp" alt="감자밭 두바이 쫀득 감자빵 5개입 상품 이미지">
+
+                <div class="living-info">
+                    <div class="liname">
+                        <strong>감자밭</strong>
+                    </div>
+                    <p>[춘천 감자밭] 두바이 쫀득 감자빵 5개입</p>
+
+                    <div class="liprice">
+                        <ul>
+                            <li class="pr_b">22,000원</li>
+                            <li><span>20%</span>17,520원</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="ligroup-only1419">
+                <img src="img_livign.etc/f16.webp" alt="워커비 DEAR. TEACHERS 상품 이미지">
+
+                <div class="living-info">
+                    <div class="liname">
+                        <strong>워커비</strong>
+                    </div>
+                    <p>[존경의 마음] DEAR. TEACHERS</p>
+
+                    <div class="liprice">
+                        <ul>
+                            <li class="pr_b">21,300원</li>
+                            <li><span>19%</span>17,280원</li>
+                        </ul>
+                    </div>
+                </div>
+            </div> 
+        </div>
+
+    </section>
+
+    <section class="best">
+        <div class="brandname">
+            <div>
+                <h2>베스트</h2>
+                <a href="#">전체보기 ></a>
+            </div>
+            <p>지금 가장 많이 찾는 아이템</p>
+        </div>
+
+        <div class="container">
+            <ul class="best_sub">
+                <li><a href="#group1" class="live">실시간</a></li>
+                <li><a href="#group2">일간</a></li>
+                <li><a href="#group3">주간</a></li>
+                <li><a href="#group4">월간</a></li>
+            </ul>
+        </div>
+
+        <div class="best_wrap">
+        <ul class="bestgroup">
+           <li id="group1"> 
+            <a href="#">
+                <img src="img_best/bl1.webp" alt="베스트상품1">
+                <p class="best-brand">오브마이온</p>
+                <p class="best-name">Signature body suit (short)</p>
+            </a>
+            <a href="#">
+                <img src="img_best/bl2.webp" alt="베스트상품2">
+                <p class="best-brand">몬에떼</p>
+                <p class="best-name">Petit Terry Bib 3 set 쁘띠 테리빕 세트</p>
+            </a>
+            <a href="#">
+                <img src="img_best/bl3.webp" alt="베스트상품3">
+                <p class="best-brand">오브마이온</p>
+                <p class="best-name">타블도트 슬로우(Slow) 플레이트 8종 택1</p>
+            </a>
+            <a href="#">
+                <img src="img_best/bl4.webp" alt="베스트상품4">
+                <p class="best-brand">비터셀즈</p>
+                <p class="best-name">Orchard Mansion Tee-Light Grey</p>
+            </a>
+            <a href="#">
+                <img src="img_best/bl5.webp" alt="베스트상품5">
+                <p class="best-brand">르나브</p>
+                <p class="best-name">esy rainy neck wind Jacket</p>
+            </a>
+            <a href="#">
+                <img src="img_best/bl6.webp" alt="베스트상품6">
+                <p class="best-brand">리이</p>
+                <p class="best-name">LAYERED PLACKET SHIRT CLOUD</p>
+            </a>
+            <a href="#">
+                <img src="img_best/bl7.webp" alt="베스트상품7">
+                <p class="best-brand">타블도트</p>
+                <p class="best-name">버블리 글라스 미스트 3size</p>
+            </a>
+            <a href="#">
+                <img src="img_best/bl8.webp" alt="베스트상품8">
+                <p class="best-brand">울랄라 파자마</p>
+                <p class="best-name">BASIC Women Pajama Set_Short Pants</p>
+            </a>
+           </li> 
+
+           <li id="group2"> 
+            <a href="#">
+                <img src="img_best/bd1.webp" alt="베스트상품1">
+                <p class="best-brand">티세르</p>
+                <p class="best-name">마리나 시어서커 커플 반팔 잠옷 세트</p>
+            </a>
+            <a href="#">
+                <img src="img_best/bd2.webp" alt="베스트상품2">
+                <p class="best-brand">티세르</p>
+                <p class="best-name">노바 실크스킨 도트 스퀘어넥 2PCS 세트</p>
+            </a>
+            <a href="#">
+                <img src="img_best/bd3.webp" alt="베스트상품3">
+                <p class="best-brand">파르티멘토 우먼</p>
+                <p class="best-name">PWC EVERYDAY BALLOON JOGGER PANTS</p>
+            </a>
+            <a href="#">
+                <img src="img_best/bd4.webp" alt="베스트상품4">
+                <p class="best-brand">누스</p>
+                <p class="best-name">말로 스트랩 뮬 슬리퍼</p>
+            </a>
+            <a href="#">
+                <img src="img_best/bd5.webp" alt="베스트상품5">
+                <p class="best-brand">소로이샵</p>
+                <p class="best-name">비비드 포인트 젓가락 10color</p>
+            </a>
+            <a href="#">
+                <img src="img_best/bd6.webp" alt="베스트상품6">
+                <p class="best-brand">삭피엔스</p>
+                <p class="best-name">시스루 골지 루즈핏 긴목 양말</p>
+            </a>
+            <a href="#">
+                <img src="img_best/bd7.webp" alt="베스트상품7">
+                <p class="best-brand">올리앤캐롤</p>
+                <p class="best-name">라모나방울무</p>
+            </a>
+            <a href="#">
+                <img src="img_best/bd8.webp" alt="베스트상품8">
+                <p class="best-brand">비터셀즈</p>
+                <p class="best-name">Rose Petal Tee-Olive</p>
+            </a>
+           </li>
+
+           <li id="group3"> 
+            <a href="#">
+                <img src="img_best/bw1.webp" alt="베스트상품1">
+                <p class="best-brand">파르티멘토 우먼</p>
+                <p class="best-name">PWC EVERYDAY BALLOON JOGGER PANTS</p>
+            </a>
+            <a href="#">
+                <img src="img_best/bw2.webp" alt="베스트상품2">
+                <p class="best-brand">파르티멘토 우먼</p>
+                <p class="best-name">PWC RIBBED EVERYDAY SHORT SLEEVE TEE</p>
+            </a>
+            <a href="#">
+                <img src="img_best/bw3.webp" alt="베스트상품3">
+                <p class="best-brand">비터셀즈</p>
+                <p class="best-name">Rose Petal Tee-Olive</p>
+            </a>
+            <a href="#">
+                <img src="img_best/bw4.webp" alt="베스트상품4">
+                <p class="best-brand">커스텀어클락</p>
+                <p class="best-name">린넨 시스루 골지 라운드 가디건 5 COLOR</p>
+            </a>
+            <a href="#">
+                <img src="img_best/bw5.webp" alt="베스트상품5">
+                <p class="best-brand">티세르</p>
+                <p class="best-name">마리나 시어서커 커플 반팔 잠옷 세트</p>
+            </a>
+            <a href="#">
+                <img src="img_best/bw6.webp" alt="베스트상품6">
+                <p class="best-brand">소로이샵</p>
+                <p class="best-name">비비드 포인트 젓가락 10color</p>
+            </a>
+            <a href="#">
+                <img src="img_best/bw7.webp" alt="베스트상품7">
+                <p class="best-brand">휠라</p>
+                <p class="best-name">휠라 에샤페 메리제인_1XM02376H_063</p>
+            </a>
+            <a href="#">
+                <img src="img_best/bw8.webp" alt="베스트상품8">
+                <p class="best-brand">몽돌</p>
+                <p class="best-name">에센셜 라운드넥 반팔 티셔츠</p>
+            </a>
+           </li>
+
+           <li id="group4"> 
+            <a href="#">
+                <img src="img_best/bm1.webp" alt="베스트상품1">
+                <p class="best-brand">파르티멘토 우먼</p>
+                <p class="best-name">PWC RIBBED EVERYDAY SHORT SLEEVE TEE</p>
+            </a>
+            <a href="#">
+                <img src="img_best/bm2.webp" alt="베스트상품2">
+                <p class="best-brand">파르티멘토 우먼</p>
+                <p class="best-name">PWC RIBBED EVERYDAY SHORT SLEEVE TEE</p>
+            </a>
+            <a href="#">
+                <img src="img_best/bm3.webp" alt="베스트상품3">
+                <p class="best-brand">비터셀즈</p>
+                <p class="best-name">Rose Petal Tee-Olive</p>
+            </a>
+            <a href="#">
+                <img src="img_best/bm4.webp" alt="베스트상품4">
+                <p class="best-brand">소로이샵</p>
+                <p class="best-name">비비드 포인트 젓가락 10color</p>
+            </a>
+            <a href="#">
+                <img src="img_best/bm5.webp" alt="베스트상품5">
+                <p class="best-brand">브랜드명</p>
+                <p class="best-name">상품명</p>
+            </a>
+            <a href="#">
+                <img src="img_best/bm6.webp" alt="베스트상품6">
+                <p class="best-brand">브랜드명</p>
+                <p class="best-name">상품명</p>
+            </a>
+            <a href="#">
+                <img src="img_best/bm7.webp" alt="베스트상품7">
+                <p class="best-brand">브랜드명</p>
+                <p class="best-name">상품명</p>
+            </a>
+            <a href="#">
+                <img src="img_best/bm8.webp" alt="베스트상품8">
+                <p class="best-brand">브랜드명</p>
+                <p class="best-name">상품명</p>
+            </a>
+           </li>
+        </ul>
+        </div>
+    </section>
+
+    <section class="special_order">
+        <div class="brandname">
+            <div>
+                <h2>오늘의 스페셜오더</h2>
+                <a href="#">전체보기 ></a>
+            </div>
+
+            <p>오직 29CM에서만 만나볼 수 있는 제품 혹은 구성을 
+                합리적인 가격으로 소개합니다.
+            </p>
+        </div>
+
+    <div class="special_wrap">
+        <div class="order1">
+            <img src="img_special/sp_ye1.png" alt="여밈 브랜드 이미지">
+            
+            <ul class="order_text">
+                <li>
+                    <p class="order_title">매일 들고 싶은 데일리 백</p>
+                    <p class="order_date">2026.01.30 ~ 02.12</p>
+                </li>   
+            </ul>
+
+            <span>불규칙한 아일렛 디테일, 여밈 레이아웃 백 단독 10% + 10%</span>
+
+            <div class="order_brand">
+                <img src="img_special/sp_ye2.webp" alt="여밈 브랜드 이미지">
+
+                <div class="brand-info">
+                 <div class="brand-top">
+                    <div class="brand-name">
+                        <span>여밈</span>
+                        <span>♡</span>
+                    </div>
+
+                    <a href="#">BRAND HOME</a>
+                 </div>
+
+                <p class="brand-desc">
+                여밈은 실용성에 최대한 집중하여 간결한 디자인의 제품들을 
+                전개하고 있습니다.
+                </p>
+                </div>
+                
+            </div>
+            
+        </div>
+
+         <div class="order2">
+            <img src="img_special/sp_blank1.webp" alt="블랭크공삼 브랜드 이미지">
+            
+            <ul class="order_text">
+                <li>
+                    <p class="order_title">미리 준비하는 코튼 자켓</p>
+                    <p class="order_date">2026.02.19 ~ 03.04</p>
+                </li>
+
+                <li>
+                <span>후기가 증명하는 프렌치 워크 자켓, 단독~15+15%</span>
+                </li>
+            </ul>
+
+            <div class="order_brand">
+                <img src="img_special/sp_blank2.png" alt="블랭크공삼 브랜드 이미지">
+
+                <div class="brand-info">
+                 <div class="brand-top">
+                    <div class="brand-name">
+                        <span>블랭크공삼</span>
+                        <span>♡</span>
+                    </div>
+
+                    <a href="#">BRAND HOME</a>
+                 </div>
+
+                    <p class="brand-desc">
+                    소재의 아름다움을 살리는 디자인, 만드는 과정을 공들여 입는 사람이 
+                    만족하고 오랫동안 우리의 옷장에 남겨질 옷.
+                    언제나 멋스러움이 묻어나는 옷을 디자인합니다.
+                    </p>
+
+                </div>
+            </div>
+    
+        </div>
+        </div>
+
+            
+        </div>
+    </div>
+    </section>
+
+
+<section class="brand_focus">
+    <div class="brandname">
+        <div>
+            <h2>지금 주목할 브랜드</h2>
+            <a href="#">전체보기 ></a>
+        </div>
+
+            <p>요즘 우리가 눈여겨보는 선택</p>
+    </div>
+
+    <div class="focus-grid">  
+        <div class="focus1">
+            <div class="fpicture">
+                <img src="img_focus/108po1.webp" alt="108파운드 브랜드 이미지">
+                <ul>
+                    <li>
+                        <p>108POUND</p>
+                        <img src="img_focus/Favorite.png" alt="favor">
+                    </li>
+                </ul>
+
+                <p class="promo-text"><span>~36%</span> | 단독할인</p>
+            </div>
+
+            <div class="fgroup">
+                <div class="g1">
+                    <img src="img_focus/108po2.webp" alt="108파운드 Reversible 3/4 Sleeve Tee 상품 이미지">
+                </div>
+
+                <div class="f_info">
+                    <strong class="f_name">108POUND</strong>
+                    <p class="product_name">Reversible 3/4 Sleeve Tee
+                    _Ivory</p>
+                    
+                    <div class="f_price">
+                        <span class="discount">14%</span>
+                        <span class="price">33,350원</span>
+                    </div>
+
+                    <div class="f_coupon">
+                        <span class="coupon">쿠폰</span>
+                        <span class="coupon">조건부 무료배송</span>
+                        
+                        <div class="right">
+                            <span class="like">♡ 9,434</span>
+                            <span class="star">★<span class="s1">4.5</span><span class="review">(305)</span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="fgroup">
+                <div class="g2">
+                    <img src="img_focus/108po3.webp" alt="108파운드 Elloy Low-rise Jean 상품 이미지">
+                </div>
+
+                <div class="f_info">
+                    <strong class="f_name">108POUND</strong>
+                    <p class="product_name">Elloy Low-rise Jean<br>_Blue</p>
+                    
+                    <div class="f_price">
+                        <span class="discount">15%</span>
+                        <span class="price">83,790원</span>
+                    </div>
+
+                    <div class="f_coupon">
+                        <span class="coupon">쿠폰</span>
+                        <span class="coupon">조건부 무료배송</span>
+                        
+                        <div class="right">
+                            <span class="like">♡ 6,521</span>
+                            <span class="star">★<span class="s1">5</span><span class="review">(112)</span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="focus2">
+            <div class="fpicture">
+                <img src="img_focus/yy1.png" alt="오픈와이와이 브랜드 이미지">
+                <ul>
+                    <li>
+                        <p>OPEN YY</p>
+                        <img src="img_focus/Favorite.png" alt="favor">
+                    </li>
+                </ul>
+
+                <p class="promo-text">무료배송</p>
+            </div>
+
+            <div class="fgroup">
+                <div class="g1">
+                    <img src="img_focus/yy2.webp" alt="오픈와이와이 GATHRED BOOTCUT PANTS 상품 이미지">
+                </div>
+
+                <div class="f_info">
+                    <strong class="f_name">오픈와이와이</strong>
+                    <p class="product_name">GATHRED BOOTCUT PANTS (BLACK)</p>
+                    
+                    <div class="f_price">
+                        <span class="price">238,000원</span>
+                    </div>
+
+                    <div class="f_coupon">
+                        <span class="coupon">무료배송</span>
+                        
+                        <div class="right">
+                            <span class="like">♡ 753</span>
+                            <span class="star">★<span class="s1">5</span><span class="review">(11)</span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="fgroup">
+                <div class="g2">
+                    <img src="img_focus/yy3.webp" alt="108파운드 ROLLED WAIST SWEAT CARGO PANTS 상품 이미지">
+                </div>
+
+                <div class="f_info">
+                    <strong class="f_name">오픈와이와이</strong>
+                    <p class="product_name">ROLLED WAIST SWEAT CARGO PANTS (GRAY)</p>
+                    
+                    <div class="f_price">
+                        <span class="price">198,000원</span>
+                    </div>
+
+                    <div class="f_coupon">
+                        <span class="coupon">무료배송</span>
+                   
+                        <div class="right">   
+                            <span class="like">♡ 43</span>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="focus3">
+            <div class="fpicture">
+                <img src="img_focus/blank1.png" alt="BLANKROOM 브랜드 이미지">
+                <ul>
+                    <li>
+                        <p>BLANKROOM</p>
+                        <img src="img_focus/Favorite.png" alt="favor">
+                    </li>
+                </ul>
+
+                <p class="promo-text">무료배송 | 단독할인</p>
+            </div>
+
+            <div class="fgroup">
+                <div class="g1">
+                    <img src="img_focus/blank2.webp" alt="BLANKROOM HALF ZIP SWEAT SHIRT 상품 이미지">
+                </div>
+
+                <div class="f_info">
+                    <strong class="f_name">BLANKROOM</strong>
+                    <p class="product_name">HALF ZIP SWEAT SHIRT<br>_BLACK</p>
+                    
+                    <div class="f_price">
+                        <span class="price">98,000원</span>
+                    </div>
+
+                    <div class="f_coupon">
+                        <span class="coupon">무료배송</span>
+                   
+                        <div class="right">
+                            <span class="like">♡ 209</span>
+                            <span class="star">★<span class="s1">5</span><span class="review">(15)</span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="fgroup">
+                <div class="g2">
+                    <img src="img_focus/blank3.webp" alt="BLANKROOM 동행 SWEAT SHIRT 상품 이미지">
+                </div>
+
+                <div class="f_info">
+                    <strong class="f_name">BLANKROOM</strong>
+                    <p class="product_name">동행 SWEAT SHIRT<br>_NAVY</p>
+                    
+                    <div class="f_price">
+                        <span class="price">78,000원</span>
+                    </div>
+
+                    <div class="f_coupon">
+                        <span class="coupon">무료배송</span>
+                        
+                        <div class="right">
+                            <span class="like">♡ 320</span>
+                            <span class="star">★<span class="s1">4.5</span><span class="review">(15)</span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="focus4">
+            <div class="fpicture">
+                <img src="img_focus/etmon1.webp" alt="etmon 상품 이미지">
+                <ul>
+                    <li>
+                        <p>ETMON</p>
+                        <img src="img_focus/Favorite.png" alt="favor">
+                    </li>
+                </ul>
+
+                <p class="promo-text"><span>~50%</span> | 단독할인</p>
+            </div>
+
+            <div class="fgroup">
+                <div class="g1">
+                    <img src="img_focus/etmon2.webp" alt="etmon Pocket Boucle Tweed Jacket 상품 이미지">
+                </div>
+
+                <div class="f_info">
+                    <strong class="f_name">에트몽</strong>
+                    <p class="product_name">[7차] Pocket Boucle Tweed Jacket,<br>Black</p>
+                    
+                    <div class="f_price">
+                        <span class="discount">32%</span>
+                        <span class="price">161,840원</span>
+                    </div>
+
+                    <div class="f_coupon">
+                   
+                        <div class="right">
+                            <span class="like">♡ 2,079</span>
+                            <span class="star">★<span class="s1">5</span><span class="review">(29)</span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="fgroup">
+                <div class="g2">
+                    <img src="img_focus/etmon3.webp" alt="etmon Layered Halter Strap T-Shirt 상품 이미지">
+                </div>
+
+                <div class="f_info">
+                    <strong class="f_name">에트몽</strong>
+                    <p class="product_name">[22차] Layered Halter Strap T-Shirt<br>Cream</p>
+                    
+                    <div class="f_price">
+                        <span class="discount">32%</span>
+                        <span class="price">39,440원</span>
+                    </div>
+
+                    <div class="f_coupon">                       
+                        <div class="right">
+                            <span class="like">♡ 16,470</span>
+                            <span class="star">★<span class="s1">4.5</span><span class="review">(316)</span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+
+        <div class="focus5">
+            <div class="fpicture">
+                <img src="img_focus/mur1.webp" alt="MURMURE 브랜드 이미지">
+                <ul>
+                    <li>
+                        <p>MURMURE</p>
+                        <img src="img_focus/Favorite.png" alt="favor">
+                    </li>
+                </ul>
+
+                <p class="promo-text"><span>~30%</span> | 단독할인</p>
+            </div>
+
+            <div class="fgroup">
+                <div class="g1">
+                    <img src="img_focus/mur2.webp" alt="MURMURE 베른 홀가먼트 브이 울 니트">
+                </div>
+
+                <div class="f_info">
+                    <strong class="f_name">뮈르뮈르</strong>
+                    <p class="product_name">[12차]베른 홀가먼트 브이 울 니트
+                                            <br>_Bern Knit</p>
+                    
+                    <div class="f_price">
+                        <span class="discount">20%</span>
+                        <span class="price">98,400원</span>
+                    </div>
+
+                    <div class="f_coupon">
+                        <span class="coupon">쿠폰</span>
+                        <span class="coupon">신상품</span>
+                        <span class="coupon">조건부 무료배송</span>
+                   
+                        <div class="right">
+                            <span class="like">♡ 1,748</span>
+                            <span class="star">★<span class="s1">5</span><span class="review">(35)</span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="fgroup">
+                <div class="g2">
+                    <img src="img_focus/mur3.webp" alt="MURMURE 라브니 심볼 나시">
+                </div>
+
+                <div class="f_info">
+                    <strong class="f_name">뮈르뮈르</strong>
+                    <p class="product_name">[23차]라브니 심볼 나시
+                                            _Ravni Sleeveless_10color</p>
+                    
+                    <div class="f_price">
+                        <span class="discount">20%</span>
+                        <span class="price">19,200원</span>
+                    </div>
+
+                    <div class="f_coupon">
+                        <span class="coupon">쿠폰</span>
+                        <span class="coupon">신상품</span>
+                        <span class="coupon">조건부 무료배송</span>
+                
+                        <div class="right">
+                            <span class="like">♡ 666</span>
+                            <span class="star">★<span class="s1">4.5</span><span class="review">(60)</span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="focus6">
+            <div class="fpicture">
+                <img src="img_focus/flowoom1.png" alt="flowoom 브랜드 이미지">
+                <ul>
+                    <li>
+                        <p>flowoom</p>
+                        <img src="img_focus/Favorite.png" alt="favor">
+                    </li>
+                </ul>
+
+                <p class="promo-text"><span>~12%</span> | 단독할인</p>
+            </div>
+
+            <div class="fgroup">
+                <div class="g1">
+                    <img src="img_focus/flowoom2.webp" alt="flowoom Antique Waving Blouse 상품 이미지">
+                </div>
+
+                <div class="f_info">
+                    <strong class="f_name">플로움</strong>
+                    <p class="product_name">[29CM단독]Antique Waving Blouse
+                                            <br>_3color</p>
+                    
+                    <div class="f_price">
+                        <span class="discount">12%</span>
+                        <span class="price">139,040원</span>
+                    </div>
+
+                    <div class="f_coupon">
+                        <span class="coupon">쿠폰</span>
+                        <span class="coupon">조건부 무료배송</span>
+                    
+                        <div class="right">
+                            <span class="like">♡ 1,768</span>
+                        </div>    
+                    </div>
+                </div>
+            </div>
+
+            <div class="fgroup">
+                <div class="g2">
+                    <img src="img_focus/flowoom3.webp" alt="flowoom Breeze Ruffle Cardigan 상품 이미지">
+                </div>
+
+                <div class="f_info">
+                    <strong class="f_name">플로움</strong>
+                    <p class="product_name">Breeze Ruffle Cardigan<br>_2color</p>
+                    
+                    <div class="f_price">
+                        <span class="discount">12%</span>
+                        <span class="price">156,640원</span>
+                    </div>
+
+                    <div class="f_coupon">
+                        <span class="coupon">쿠폰</span>
+                        <span class="coupon">조건부 무료배송</span>
+                    
+                        <div class="right">
+                            <span class="like">♡ 984</span>
+                            <span class="star">★<span class="s1">5</span><span class="review">(5)</span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+       <div class="focus7">
+            <div class="fpicture">
+                <img src="img_focus/notia1.webp" alt="notia 브랜드 이미지">
+                <ul>
+                    <li>
+                        <p>NOTIA</p>
+                        <img src="img_focus/Favorite.png" alt="favor">
+                    </li>
+                </ul>
+
+                <p class="promo-text"><span>~50%</span> | 단독할인</p>
+            </div>
+
+            <div class="fgroup">
+                <div class="g1">
+                    <img src="img_focus/notia2.webp" alt="notia STANDARD FIT LONG SKIRT 상품 이미지">
+                </div>
+
+                <div class="f_info">
+                    <strong class="f_name">노티아</strong>
+                    <p class="product_name">[L 사이즈 추가] STANDARD FIT LONG SKIRT - GRAY</p>
+                    
+                    <div class="f_price">
+                        <span class="discount">35%</span>
+                        <span class="price">70,230원</span>
+                    </div>
+
+                    <div class="f_coupon">
+                        <span class="coupon">쿠폰</span>
+                        <span class="coupon">조건부 무료배송</span>
+                   
+                        <div class="right">
+                            <span class="like">♡ 16,198</span>
+                            <span class="star">★<span class="s1">5</span><span class="review">(1,207)</span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="fgroup">
+                <div class="g2">
+                    <img src="img_focus/notia3.webp" alt="notia OVER FIT SINGLE LEATHER JACKET 상품 이미지">
+                </div>
+
+                <div class="f_info">
+                    <strong class="f_name">노티아</strong>
+                    <p class="product_name">OVER FIT SINGLE LEATHER JACKET 
+                                            <br>- 2COLORS</p>
+                    
+                    <div class="f_price">
+                        <span class="discount">24%</span>
+                        <span class="price">151,470원</span>
+                    </div>
+
+                    <div class="f_coupon">
+                        <span class="coupon">쿠폰</span>
+                        <span class="coupon">조건부 무료배송</span>
+                  
+                        <div class="right">
+                            <span class="like">♡ 12,879</span>
+                            <span class="star">★<span class="s1">5</span><span class="review">(923)</span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="focus8">
+            <div class="fpicture">
+                <img src="img_focus/lilisu1.png" alt="lilisu 브랜드 이미지">
+                <ul>
+                    <li>
+                        <p>NOTIA</p>
+                        <img src="img_focus/Favorite.png" alt="favor">
+                    </li>
+                </ul>
+
+                <p class="promo-text">단독발매</p>
+            </div>
+
+            <div class="fgroup">
+                <div class="g1">
+                    <img src="img_focus/lilisu2.webp" alt="lilisu Wonder Blouse / White 상품 이미지">
+                </div>
+
+                <div class="f_info">
+                    <strong class="f_name">리리수</strong>
+                    <p class="product_name">[17차 리오더]_Wonder Blouse / White</p>
+                    
+                    <div class="f_price">
+                        <span class="discount">40%</span>
+                        <span class="price">101,150원</span>
+                    </div>
+
+                    <div class="f_coupon">
+                        <span class="coupon">쿠폰</span>
+                        <span class="coupon">조건부 무료배송</span>
+                   
+                        <div class="right">
+                            <span class="like">♡ 11,934</span>
+                            <span class="star">★<span class="s1">5</span><span class="review">(95)</span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="fgroup">
+                <div class="g2">
+                    <img src="img_focus/lilisu3.webp" alt="lilisu Aven t-shirt / White 상품 이미지">
+                </div>
+
+                <div class="f_info">
+                    <strong class="f_name">리리수</strong>
+                    <p class="product_name">Aven t-shirt / White</p>
+                    
+                    <div class="f_price">
+                        <span class="discount">33%</span>
+                        <span class="price">45,900</span>
+                    </div>
+
+                    <div class="f_coupon">
+                        <span class="coupon">조건부 무료배송</span>
+                  
+                        <div class="right">
+                            <span class="like">♡ 138</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>   
+</section> 
+
+<section class="brand_pick">
+        <div class="brandname">
+            <div>
+                <h2>취향저격 브랜드</h2>
+                <a href="#">전체보기 ></a>
+            </div>
+
+            <p>딱, 이런 느낌</p>
+        </div>
+        
+    <div class="pick_wrap swiper-container">  
+       <div class="swiper-wrapper">
+        <div class="swiper-slide pick1">
+            <div class="p_picture">
+                <img src="img_pick/seoul1.jpg" alt="미모서울 브랜드 이이밎">
+
+                <div class="p_text">
+                    <p class="big">소장가치 있는 발견</p>
+                    <p>소장하고 싶었던 미모서울이 29CM에 입점했어요. 
+                        <br>지금 미모서울을 만나보세요.</p>        
+                </div>
+            </div>
+
+            <div class="pickgroup">
+                <div class="p1">
+                    <img src="img_pick/seoul2.webp" alt="미모서울 SODA POP 도마/플레이팅 도마 상품 이미지">
+                </div>
+
+                <div class="pick_info">
+                    <strong class="p_name">미모서울</strong>
+                    <p class="product_name">SODA POP 도마/플레이팅 도마</p>
+                    
+                    <div class="pick_price">
+                        <span class="price">97,000원</span>
+                        <span class="p_like">♡</span>
+                    </div>
+
+                    <div class="pick_coupon">
+                        <span class="coupon">조건부무료배송</span>
+                        <span class="coupon">신상품</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pickgroup">
+                <div class="p2">
+                    <img src="img_pick/seoul3.webp" alt="미모서울 SODA POP 도마/플레이팅 도마 상품 이미지">
+                </div>
+
+                <div class="pick_info">
+                    <strong class="p_name">미모서울</strong>
+                    <p class="product_name">SODA POP 도마/플레이팅 도마</p>
+                    
+                    <div class="pick_price">
+                        <span class="price">97,000원</span>
+                        <span class="p_like">♡</span>
+                    </div>
+
+                    <div class="pick_coupon">
+                        <span class="coupon">조건부무료배송</span>
+                        <span class="coupon">신상품</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="swiper-slide pick2">
+            <div class="p_picture">
+                <img src="img_pick/lego1.jpg" alt="레고트 브랜드 이미지">
+
+                <div class="p_text1">
+                    <p class="big">어디든 함께하는 여행의 시작</p>
+                    <p>가볍게 떠나는 여행에도, 레고트는 늘 곁에 있어요.</p>        
+                </div>
+            </div>
+
+            <div class="pickgroup">
+                <div class="p1">
+                    <img src="img_pick/lego2.webp" alt="레고트 레고트 여행용 캐리어 세트 상품 이미지">
+                </div>
+
+                <div class="pick_info">
+                    <strong class="p_name">레고트</strong>
+                    <p class="product_name">레고트 여행용 캐리어 20인치
+                                            +24인치 세트</p>
+                    
+                    <div class="pick_price">
+                        <span class="discount">23%</span>
+                        <span class="price">499,000원</span>
+                        <span class="p_like">♡</span>
+                    </div>
+
+                    <div class="pick_coupon">
+                        <span class="coupon">조건부무료배송</span>
+                        <span class="coupon">신상품</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pickgroup">
+                <div class="p2">
+                    <img src="img_pick/lego3.webp" alt="레고트 레고트 여행용 멀티 보스턴백 상품 이미지">
+                </div>
+
+                <div class="pick_info">
+                    <strong class="p_name">레고트</strong>
+                    <p class="product_name">레고트 여행용 멀티 보스턴백
+                                            (3color)</p>
+                    
+                    <div class="pick_price">
+                        <span class="discount">19%</span>
+                        <span class="price">76,500원</span>
+                        <span class="p_like">♡</span>
+                    </div>
+
+                    <div class="pick_coupon">
+                        <span class="coupon">조건부무료배송</span>
+                        <span class="coupon">신상품</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="swiper-slide pick3">
+            <div class="p_picture">
+                <img src="img_pick/du1.jpg" alt="듀엘 브랜드 이미지">
+
+                <div class="p_text">
+                    <p class="big">매일 입고싶은 듀엘링</p>
+                    <p>빈티지한 무드의 그래픽 저지,<br>
+                        29CM에서 단독으로 만나보세요.
+                </div>        
+            </div>
+
+            <div class="pickgroup">
+                <div class="p1">
+                    <img src="img_pick/du2.webp" alt="듀엘 Heart Slim Crop Top WH 상품 이미지">
+                </div>
+
+                <div class="pick_info">
+                    <strong class="p_name">듀엘</strong>
+                    <p class="product_name">[DEWLING][4차][순이,하연] Heart Slim Crop Top WH_D254MSM102</p>
+                    
+                    <div class="pick_price">
+                        <span class="price">59,000원</span>
+                        <span class="p_like">♡</span>
+                    </div>
+
+                    <div class="pick_coupon">
+                        <span class="coupon">무료배송</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pickgroup">
+                <div class="p2">
+                    <img src="img_pick/du3.webp" alt="듀엘 Punching Line Track Zip-Up 상품 이미지">
+                </div>
+
+                <div class="pick_info">
+                    <strong class="p_name">듀엘</strong>
+                    <p class="product_name">[서지수 PICK]_[DEWLING] Punching Line Track Zip-Up Jacket MG_D254MSJ102</p>
+                    
+                    <div class="pick_price">
+                        <span class="price">179,000원</span>
+                        <span class="p_like">♡</span>
+                    </div>
+
+                    <div class="pick_coupon">
+                        <span class="coupon">무료배송</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+       </div>  
+    </div>  
+</section>
+
+
+
+<section class="recommend">
+    <div class="brandname">
+        <div>
+            <h2>당신을 위한 추천</h2>
+            <a href="#">전체보기 ></a>
+        </div>
+
+        <p>취향을 분석한 맞춤 큐레이션</p>
+    </div>    
+
+    <div class="reco_wrap">
+        <div class="reco1">
+            <img src="img_you/pc_you1.webp" alt="비터셀즈 Essential Golgi Tee 상품 이미지">
+            <div class="reco_info">
+                    <strong>비터셀즈</strong>
+                    <p class="r_name">[2PACK-컬러추가]Essential Golgi Tee-11 colors</p>
+
+                    <div class="reco_price">
+                        <span class="discount">30%</span>
+                        <span class="price">54,000원</span>
+                    </div>
+
+                    <div class="reco_coupon">
+                        <span class="coupon">무료배송</span>
+                    </div>
+
+                    <div class="reco_like">
+                        <span class="like">♡41,706</span>
+                        <span class="star">★4.8(1,716)</span>
+                    </div>
+             </div>
+        </div>
+
+        <div class="reco2">
+            <img src="img_you/pc_you2.webp" alt="르 vintage fur half coat 상품 이미지">
+            <div class="reco_info">
+                    <strong>르</strong>
+                    <p class="r_name">vintage fur half coat(beige)</p>
+
+                    <div class="reco_price">
+                        <span class="discount">70%</span>
+                        <span class="price">117,810원</span>
+                    </div>
+
+                    <div class="reco_coupon">
+                        <span class="coupon">쿠폰</span>
+                    </div>
+
+                    <div class="reco_like">
+                        <span class="like">♡23,356</span>
+                        <span class="star">★4.5(266)</span>
+                    </div>
+             </div>
+        </div>
+
+        <div class="reco3">
+            <img src="img_you/pc_you3.webp" alt="르 wool double-breasted coat 상품 이미지">
+            <div class="reco_info">
+                    <strong>르</strong>
+                    <p class="r_name">wool double-breasted coat
+                                        (melange gray)</p>
+
+                    <div class="reco_price">
+                        <span class="discount">62%</span>
+                        <span class="price">172,210원</span>
+                    </div>
+
+                    <div class="reco_coupon">
+                        <span class="coupon">쿠폰</span>
+                    </div>
+
+                    <div class="reco_like">
+                        <span class="like">♡14,486</span>
+                        <span class="star">★4.7(112)</span>
+                    </div>
+             </div>
+        </div>
+
+        <div class="reco4">
+            <img src="img_you/pc_you4.webp" alt="웬즈데이오아시스 W/Snug Button Henry Neck Hoodie 상품 이미지">
+            <div class="reco_info">
+                    <strong>웬즈데이오아시스</strong>
+                    <p class="r_name">W/Snug Button Henry Neck Hoodie
+                                        _CREAM YELLOW</p>
+
+                    <div class="reco_price">
+                        <span class="discount">32%</span>
+                        <span class="price">53,040원
+                        </span>
+                    </div>
+
+                    <div class="reco_coupon">
+                        <span class="coupon">쿠폰</span>
+                    </div>
+
+                    <div class="reco_like">
+                        <span class="like">♡1,862</span>
+                        <span class="star">★4.5(7)</span>
+                    </div>
+             </div>
+        </div>
+
+        <div class="reco5">
+            <img src="img_you/pc_you5.webp" alt="오떼뜨 CASHMERE LAYERED KNIT 상품 이미지">
+            <div class="reco_info">
+                    <strong>오뗴뜨</strong>
+                    <p class="r_name">[여울 착용] [40th] CASHMERE LAYERED KNIT
+                                        _5COLOR</p>
+
+                    <div class="reco_price">
+                        <span class="discount">37%</span>
+                        <span class="price">81,110원</span>
+                    </div>
+
+                    <div class="reco_coupon">
+                        <span class="coupon">쿠폰</span>
+                        <span class="coupon">조건부 무료배송</span>
+                    </div>
+
+                    <div class="reco_like">
+                        <span class="like">♡8,667</span>
+                        <span class="star">★4.5(214)</span>
+                    </div>
+             </div>
+        </div>
+
+        <div class="reco6">
+            <img src="img_you/pc_you6.webp" alt="망고매니플리즈 BIJOU VELVET BAG 상품 이미지">
+            <div class="reco_info">
+                    <strong>망고매니플리즈</strong>
+                    <p class="r_name">[29CM단독]BIJOU VELVET BAG
+                                        _BLACK</p>
+
+                    <div class="reco_price">
+                        <span class="price">89,000원</span>
+                    </div>
+
+                    <div class="reco_like">
+                        <span class="like">♡3,473</span>
+                        <span class="star">★4.8(12)</span>
+                    </div>
+             </div>
+        </div>
+
+        <div class="reco7">
+            <img src="img_you/pc_you7.webp" alt="어반드레스 April Check Shirt RED 상품 이미지">
+            <div class="reco_info">
+                    <strong>어반드레스</strong>
+                    <p class="r_name">[ITZY 류진, 빌리 시윤 착용]
+                                        _April Check Shirt RED</p>
+
+                    <div class="reco_price">
+                        <span class="discount">31%</span>
+                        <span class="price">40,150원</span>
+                    </div>
+
+                    <div class="reco_coupon">
+                        <span class="coupon">무료배송</span>
+                    </div>
+
+                    <div class="reco_like">
+                        <span class="like">♡8,498</span>
+                        <span class="star">★4.5(462)</span>
+                    </div>
+             </div>
+        </div>
+
+        <div class="reco8">
+            <img src="img_you/pc_you8.webp" alt="비바라비다 Prompt 헤비테리 후드 상품 이미지">
+            <div class="reco_info">
+                    <strong>비바라비다</strong>
+                    <p class="r_name">Prompt 헤비테리 후드</p>
+
+                    <div class="reco_price">
+                        <span class="discount">44%</span>
+                        <span class="price">45,820원</span>
+                    </div>
+
+                    <div class="reco_coupon">
+                        <span class="coupon">쿠폰</span>
+                        <span class="coupon">무료배송</span>
+                    </div>
+
+                    <div class="reco_like">
+                        <span class="like">♡238</span>
+                        <span class="star">★5(4)</span>
+                    </div>
+             </div>
+        </div>
+
+        <div class="reco9">
+            <img src="img_you/pc_you9.webp" alt="더미튼 Molly hoodie t-shirt  (gray) 상품 이미지">
+            <div class="reco_info">
+                    <strong>더미튼</strong>
+                    <p class="r_name">Molly hoodie t-shirt (gray)</p>
+
+                    <div class="reco_price">
+                        <span class="discount">19%</span>
+                        <span class="price">72,090원</span>
+                    </div>
+
+                    <div class="reco_coupon">
+                        <span class="coupon">쿠폰</span>
+                    </div>
+
+                    <div class="reco_like">
+                        <span class="like">♡2,749</span>
+                        <span class="star">★5(69)</span>
+                    </div>
+             </div>
+        </div>
+
+        <div class="reco10">
+            <img src="img_you/pc_you10.webp" alt="히어리 포피 체인 미니백_블랙 상품 이미지">
+            <div class="reco_info">
+                    <strong>히어리</strong>
+                    <p class="r_name">포피 체인 미니백_블랙</p>
+
+                    <div class="reco_price">
+                        <span class="discount">10%</span>
+                        <span class="price">88,200원</span>
+                    </div>
+
+                    <div class="reco_coupon">
+                        <span class="coupon">쿠폰</span>
+                    </div>
+
+                    <div class="reco_like">
+                        <span class="like">♡12,772</span>
+                        <span class="star">★5(296)</span>
+                    </div>
+             </div>
+        </div>
+
+        <div class="reco11">
+            <img src="img_you/pc_you11.webp" alt="룬느 14K 데일리 열손가락 실반지(14K골드) 상품 이미지">
+            <div class="reco_info">
+                    <strong>룬느</strong>
+                    <p class="r_name">14K 데일리 열손가락 실반지(14K골드) #RN06</p>
+
+                    <div class="reco_price">
+                        <span class="discount">15%</span>
+                        <span class="price">55,250원</span>
+                    </div>
+
+                    <div class="reco_coupon">
+                        <span class="coupon">쿠폰</span>
+                    </div>
+
+                    <div class="reco_like">
+                        <span class="like">♡1,642</span>
+                        <span class="star">★4.5(82)</span>
+                    </div>
+             </div>
+        </div>
+
+        <div class="reco12">
+            <img src="img_you/pc_you12.webp" alt="비바라비다 Aster 볼캡 상품 이미지">
+            <div class="reco_info">
+                    <strong>비바라비다</strong>
+                    <p class="r_name">Aster 볼캡</p>
+
+                    <div class="reco_price">
+                        <span class="discount">43%</span>
+                        <span class="price">19,470원</span>
+                    </div>
+
+                    <div class="reco_coupon">
+                        <span class="coupon">쿠폰</span>
+                        <span class="coupon">무료배송</span>
+                    </div>
+
+                    <div class="reco_like">
+                        <span class="like">♡316</span>
+                        <span class="star">★4(6)</span>
+                    </div>
+             </div>
+        </div>
+
+
+    </div>
+</section>
+
+
+<!---------------------------------------------------------------------------------------------------->
+
+<div class="topbtn">
+    <button  class="mbtn">↑</button>
+</div>
+
+<!-- top 버튼 script-->
+<script>
+    $(".mbtn").click(function(){
+        $("html,body").animate({
+            scrollTop :0
+        },1000);
+    });
+</script>
+
+
+<footer>
+<div class="center">
+    <p>고객센터 1660-2929</p>
+    <p class="c1">운영시간 : 평일 09:00 ~ 18:00 <br>(점심시간 12:00 ~ 13:00 제외)</p>
+</div>
+
+<div class="icon">
+   <div class="fbtn"> 
+        <button>FAQ ></button>
+        <a href="php/qna_list.php">1:1 ></a>
+   </div>
+
+   <div class="sns">
+        <a href="https://www.instagram.com/29cm.official"><img src="footerimg/insta.png" alt="instagram"></a>
+        <a href="https://www.youtube.com/@29CM"><img src="footerimg/youtu.png" alt="youtube"></a>
+        <a href="https://apps.apple.com/us/app/29cm/id789634744"><img src="footerimg/app.png" alt="apple"></a>
+        <a href="https://www.instagram.com/29cm.official"><img src="footerimg/gool.png" alt="google"></a>
+   </div>
+</div>
+
+<div class="notice">
+    <ul>
+        <li>NOTICE</li>
+    </ul>
+
+    <ul>
+        <li>ABOUT US</li>
+            <ul class="ngroup">
+                <li>인재채용</li>
+                <li>상시 할인 혜택</li>
+            </ul>
+    </ul>
+
+    <ul>
+        <li>MY ORDER</li>
+            <ul class="ngroup">
+                <li>주문배송</li>
+                <li>취소/교환/반품내역</li>
+                <li>상품리뷰 내역</li>
+                <li>증빙서류발급</li>
+            </ul>
+    </ul>
+
+    <ul>
+        <li>MY ACCOUNT</li>
+            <ul class="ngroup">
+                <li>회원정보수정</li>
+                <li>회원등급</li>
+                <li>적립금 현황</li>
+                <li>쿠폰</li>
+            </ul>
+    </ul>
+
+    <ul>
+        <li>HELP</li>
+            <ul class="ngroup">
+                <li><a href="php/qna_list.php">1:1문의</a></li>
+                <li>입점 및 제휴 문의</li>
+                <li>상품 Q&A내역</li>
+                <li>FAQ</li>
+                <li>고객의 소리</li>
+            </ul>
+    </ul>
+</div>
+
+<div class="p-infor1">
+    <ul>
+        <li>개인정보 처리방침</li>
+        <li>이용약관</li>
+        <li>분쟁해결기준</li>
+        <li>안전거래센터</li>
+        <li>결제대행 위탁사</li>
+    </ul>
+</div>
+
+<div class="p-infor2">
+    <p>
+    상호명:(주)무신사 사업장소재지:서울특별시 성동구 아차산로 13번길 11, 1층
+    (성수동2가,무신사캠퍼스N1) 팩스:070-8622-7737 사업자등록번호:211-88-79575 통신판매업신고:2022-서울성동-01952
+    </p>
+
+    <p>전화번호:1660-2929 이메일:customer@29cm.co.kr 대표:조만호,박준모 호스팅서비스:(주)무신사</p>
+
+    <p>
+    일부 상품의 경우 29CM는 통신판매의 당사자가 아닌 통신판매중개자로서 상품,상품정보,거래에 대한
+    책임이 제한될 수 있으므로, 각 상품 페이지에서 구체적인 내용을 확인하시기 바랍니다.
+    </p>
+
+    <p>
+     당사는 고객님의 현금 결제한 금액에 대해 우리은행과 채무지급보증 계약을 체결하여 안정거래를
+     보장하고 있습니다. 서비스 가입 사실 확인
+    </p>
+</div>
+
+ 
+</footer>
+
+<?php include "php/bar.php"; ?>
+</body>
+</html>
