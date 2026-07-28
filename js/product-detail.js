@@ -27,6 +27,9 @@ const previousButton = document.querySelector(".gallery-arrow.prev");
 const nextButton = document.querySelector(".gallery-arrow.next");
 const wishButton = document.querySelector(".wish-button");
 const typeItems = document.querySelectorAll(".type-item");
+const productDescription = document.querySelector("#productDescription");
+const descriptionToggle = document.querySelector(".description-toggle");
+const descriptionToggleText = document.querySelector(".description-toggle-text");
 let currentImage = 0;
 
 function showImage(index) {
@@ -75,4 +78,30 @@ typeItems.forEach((item) => {
 
         item.classList.add("active");
     });
+});
+
+descriptionToggle.addEventListener("click", () => {
+    const expanded = descriptionToggle.getAttribute("aria-expanded") === "true";
+
+    if (expanded) {
+        productDescription.classList.remove("expanded");
+        productDescription.style.maxHeight = "";
+        descriptionToggle.setAttribute("aria-expanded", "false");
+        descriptionToggleText.textContent = "상품설명 더보기";
+        productDescription.scrollIntoView({
+            behavior: "smooth",
+            block: "start"
+        });
+    } else {
+        productDescription.classList.add("expanded");
+        productDescription.style.maxHeight = `${productDescription.scrollHeight}px`;
+        descriptionToggle.setAttribute("aria-expanded", "true");
+        descriptionToggleText.textContent = "상품설명 접기";
+    }
+});
+
+window.addEventListener("resize", () => {
+    if (descriptionToggle.getAttribute("aria-expanded") === "true") {
+        productDescription.style.maxHeight = `${productDescription.scrollHeight}px`;
+    }
 });
