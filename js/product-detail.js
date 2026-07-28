@@ -27,6 +27,7 @@ const previousButton = document.querySelector(".gallery-arrow.prev");
 const nextButton = document.querySelector(".gallery-arrow.next");
 const wishButton = document.querySelector(".wish-button");
 const typeItems = document.querySelectorAll(".type-item");
+const selectedProductName = document.querySelector("#selectedProductName");
 const productDescription = document.querySelector("#productDescription");
 const descriptionToggle = document.querySelector(".description-toggle");
 const descriptionToggleText = document.querySelector(".description-toggle-text");
@@ -77,6 +78,7 @@ typeItems.forEach((item) => {
         });
 
         item.classList.add("active");
+        selectedProductName.textContent = item.dataset.name;
     });
 });
 
