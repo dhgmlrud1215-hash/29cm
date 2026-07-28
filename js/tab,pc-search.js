@@ -1,6 +1,10 @@
 $(function(){
 
     $(".topsearch").on("click", function(e){
+        if (window.matchMedia("(max-width: 767px)").matches) {
+            return;
+        }
+
         e.preventDefault();
 
         $(".search-model")
@@ -32,6 +36,12 @@ $(function(){
         if(e.keyCode === 13 || e.keyCode === 32){
             e.preventDefault();
             $(this).trigger("click");
+        }
+    });
+
+    $(document).on("keydown", function(e){
+        if (e.key === "Escape" && $(".search-model").hasClass("active")) {
+            $(".search-close-switch").trigger("click");
         }
     });
 
