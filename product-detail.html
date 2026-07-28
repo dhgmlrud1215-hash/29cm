@@ -3,83 +3,264 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>모듈 디퓨저 | 29CM</title>
+    <title>[NEW] 머들디퓨저 200ml (6종) | 29CM</title>
+    <link rel="icon" href="./img_mtop/favicon.png">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/tab,pc-search.css">
+    <link rel="stylesheet" href="./css/product-detail.css">
+    <script src="./js/jquery-1.11.2.min.js"></script>
+    <script src="./js/tab-menu.js"></script>
+    <script src="./js/PC-menu.js"></script>
+    <script src="./js/tab,pc-search.js"></script>
+    <script src="./js/search-box.js"></script>
+    <script src="./js/product-detail.js" defer></script>
 </head>
 <body>
-    <header>
-        <!-- 29CM 헤더 -->
+    <header id="main" class="site-header">
+        <div class="mtop">
+            <h1><a href="./main.html">29CM</a></h1>
+
+            <div class="topicon">
+                <a href="./cart.html" aria-label="장바구니">
+                    <img src="./img_mtop/Shopping Bag.png" alt="">
+                </a>
+                <a class="toplike" href="./like.html" aria-label="좋아요">
+                    <img src="./img_mtop/Favorite.png" alt="">
+                </a>
+                <a class="topsearch" href="#" aria-label="검색창 열기">
+                    <img src="./img_mtop/Search.png" alt="">
+                </a>
+                <a class="topPro" href="./mypage(none).html" aria-label="마이페이지">
+                    <img src="./img_mtop/Profile.png" alt="">
+                </a>
+            </div>
+        </div>
     </header>
 
-    <main class="product-detail">
-    <section class="brand-banner">
-        <div class="brand-info">
-            <img
-                src="./img_detail/brand-logo.webp"
-                alt="이구어포스트로피 로고"
-                class="brand-logo"
-            >
-
-            <div class="brand-text">
-                <h2>이구어포스트로피</h2>
-                <p>아름다운 실용</p>
-            </div>
+    <div class="search-model" aria-hidden="true">
+        <div class="search-close-switch" role="button" tabindex="0" aria-label="검색창 닫기">
+            <img src="./img_mtop/X.png" alt="">
         </div>
 
-        <a href="#" class="brand-home">BRAND HOME</a>
-    </section>
+        <form class="search-model-form" role="search">
+            <input type="text" id="search-input" placeholder="검색어를 입력하세요" aria-label="검색어 입력">
+            <img src="./img_mtop/Search.png" alt="검색하기">
+            <ul class="suggest-list"></ul>
+        </form>
 
-    <section class="product-top">
-        <div class="product-gallery">
-            <div class="product-main-image">
-                <img
-                    src="./img_detail/diffuser-main.webp"
-                    alt="이구어포스트로피 모듈 디퓨저"
-                    id="mainProductImage"
-                >
+        <div class="search-word">
+            <div class="popular">
+                <p>인기검색어</p>
+                <a href="#">수저통</a>
+                <a href="#">체크 셔츠</a>
+                <a href="#">머리끈</a>
+                <a href="#">테이블</a>
+                <a href="#">아르켓</a>
+                <a href="#">반다나</a>
+                <a href="#">페이즈</a>
+                <a href="#">퓨마</a>
+                <a href="#">사이드테이블</a>
+                <a href="#">인더로우</a>
             </div>
+        </div>
+    </div>
 
-            <div class="product-thumbnails">
-                <button type="button" class="thumbnail active">
+    <nav class="mtop_menu" aria-label="콘텐츠 메뉴">
+        <ul>
+            <li class="tab_ham" role="button" tabindex="0" aria-label="전체 메뉴 열기" aria-expanded="false">
+                <img src="./img_mtop/Menu.png" alt="">
+            </li>
+            <li><a href="./29magazine.html">29Magazine</a></li>
+            <li><a href="./lookbook.html">Lookbook</a></li>
+            <li><a href="./showcase.html">Showcase</a></li>
+            <li><a href="./event.html">Event</a></li>
+        </ul>
+
+        <div class="tab-menu">
+            <div class="tmenu-wrap">
+                <ul class="tm1">
+                    <li><a href="#">BEST</a><ul class="tm2"></ul></li>
+                    <li><a href="#">WOMEN</a><ul class="tm2"></ul></li>
+                    <li><a href="#">MEN</a><ul class="tm2"></ul></li>
+                    <li><a href="#">KIDS</a><ul class="tm2"></ul></li>
+                    <li><a href="#">BEAUTY</a><ul class="tm2"></ul></li>
+                    <li><a href="#">LIVING</a><ul class="tm2"></ul></li>
+                    <li><a href="#">TECH</a><ul class="tm2"></ul></li>
+                    <li><a href="#">FOOD</a><ul class="tm2"></ul></li>
+                    <li><a href="#">CULTURE</a><ul class="tm2"></ul></li>
+                    <li><a href="#">EARTH</a><ul class="tm2"></ul></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <nav class="mtop_sub" aria-label="상품 카테고리 메뉴">
+        <div class="sub-menu">
+            <ul class="sub1">
+                <li data-key="BEST"><a href="#">BEST</a></li>
+                <li data-key="FASHION"><a href="#">FASHION</a></li>
+                <li data-key="BEAUTY"><a href="#">BEAUTY</a></li>
+                <li data-key="LIVING"><a href="#">LIVING</a></li>
+                <li data-key="TECH"><a href="#">TECH</a></li>
+                <li data-key="FOOD"><a href="#">FOOD</a></li>
+                <li data-key="CULTURE"><a href="#">CULTURE</a></li>
+                <li data-key="EARTH"><a href="#">EARTH</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="product-detail">
+        <section class="brand-banner" aria-label="브랜드 정보">
+            <div class="brand-info">
+                <img src="./img_detail/brand-logo.webp" alt="29 어포스트로피 로고" class="brand-logo">
+                <div class="brand-text">
+                    <h2>이구어퍼스트로피</h2>
+                    <p>아름다운 실용</p>
+                </div>
+            </div>
+            <a href="#" class="brand-home">BRAND HOME</a>
+        </section>
+
+        <section class="product-top">
+            <div class="product-gallery">
+                <div class="product-main-image">
                     <img
                         src="./img_detail/diffuser-main.webp"
-                        alt="모듈 디퓨저 대표 이미지"
+                        alt="이구어퍼스트로피 머들디퓨저 200ml"
+                        id="mainProductImage"
                     >
-                </button>
+                    <button type="button" class="gallery-arrow prev" aria-label="이전 이미지">‹</button>
+                    <button type="button" class="gallery-arrow next" aria-label="다음 이미지">›</button>
+                </div>
 
-                <button type="button" class="thumbnail">
-                    <img
-                        src="./img_detail/diffuser-sub1.webp"
-                        alt="모듈 디퓨저 색상 구성"
-                    >
-                </button>
+                <div class="gallery-pagination" aria-label="상품 이미지 페이지">
+                    <button type="button" class="dot active" aria-label="1번 이미지" aria-current="true"></button>
+                    <button type="button" class="dot" aria-label="2번 이미지"></button>
+                    <button type="button" class="dot" aria-label="3번 이미지"></button>
+                    <button type="button" class="dot" aria-label="4번 이미지"></button>
+                    <button type="button" class="dot" aria-label="5번 이미지"></button>
+                </div>
 
-                <button type="button" class="thumbnail">
-                    <img
-                        src="./img_detail/diffuser-sub2.webp"
-                        alt="모듈 디퓨저 연출 이미지 1"
-                    >
-                </button>
-
-                <button type="button" class="thumbnail">
-                    <img
-                        src="./img_detail/diffuser-sub3.webp"
-                        alt="모듈 디퓨저 연출 이미지 2"
-                    >
-                </button>
-
-                <button type="button" class="thumbnail">
-                    <img
-                        src="./img_detail/diffuser-sub4.webp"
-                        alt="모듈 디퓨저 연출 이미지 3"
-                    >
-                </button>
+                <div class="gallery-delivery">
+                    주 7일 언제나 당일발송, 전상품 무료배송
+                    <strong>무배당발</strong>
+                    <span aria-hidden="true">›</span>
+                </div>
             </div>
-        </div>
 
-        <div class="product-summary">
-            <!-- 상품명, 가격, 옵션, 구매 버튼 -->
-        </div>
-    </section>
-</main>
+            <div class="product-summary">
+                <div class="summary-heading">
+                    <div>
+                        <h1>[NEW] 머들디퓨저 200ml (6종)</h1>
+                        <div class="review-info">
+                            <span class="review-stars" aria-label="평점 5점">★★★★★</span>
+                            <a href="#">1,745개 리뷰 보기</a>
+                        </div>
+                        <div class="product-badges">
+                            <span>무료배송</span>
+                            <span>단독</span>
+                        </div>
+                    </div>
+
+                    <button type="button" class="wish-button" aria-pressed="false">
+                        <span class="wish-icon" aria-hidden="true">♡</span>
+                        <span>2.8만</span>
+                    </button>
+                </div>
+
+                <p class="arrival-notice">
+                    <span aria-hidden="true">▣</span>
+                    오늘 오후 10시까지 결제 시 내일 도착 보장
+                </p>
+
+                <div class="price-information">
+                    <del>49,000원</del>
+                    <p class="sale-price">
+                        <strong class="discount-rate">34%</strong>
+                        <strong>32,220원</strong>
+                    </p>
+                    <button type="button" class="coupon-download">쿠폰받기 ↓</button>
+                </div>
+
+                <div class="coupon-box">
+                    <div class="coupon-title">
+                        <strong><span>34%</span> 32,220원</strong>
+                        <small>첫 구매가</small>
+                    </div>
+                    <button type="button" class="coupon-link">
+                        <span class="pay-badge">29</span>
+                        무신사 삼성카드 결제 시 추가 혜택
+                        <span aria-hidden="true">›</span>
+                    </button>
+                </div>
+
+                <dl class="purchase-benefits">
+                    <div>
+                        <dt>구매 적립금</dt>
+                        <dd>
+                            최대 <strong>483원</strong> (Newbie 1.5% 적립)
+                            <p>· 무신사머니 결제 시 1.5% 추가 적립</p>
+                        </dd>
+                    </div>
+                    <div>
+                        <dt>결제 혜택</dt>
+                        <dd>
+                            최대 <strong>4,490원</strong> 적립
+                            <p>· 무신사 삼성카드 결제 시 최대 10% 적립</p>
+                        </dd>
+                    </div>
+                    <div>
+                        <dt>무이자 할부</dt>
+                        <dd><a href="#">카드사별 할부 혜택 안내</a></dd>
+                    </div>
+                    <div>
+                        <dt>배송정보</dt>
+                        <dd>
+                            <strong class="delivery-name">무배당발</strong>
+                            <a href="#">전체보기</a>
+                            <p class="delivery-date">오늘 오후 10시까지 결제 시 내일 도착 보장</p>
+                        </dd>
+                    </div>
+                    <div>
+                        <dt>배송비</dt>
+                        <dd>
+                            <strong class="plain">무료배송</strong>
+                            <p>제주/도서산간 3,000원 추가</p>
+                        </dd>
+                    </div>
+                </dl>
+
+                <div class="product-type">
+                    <p>머들디퓨저 · 디퓨저 200ml</p>
+                    <div class="type-list">
+                        <button type="button" class="type-item"><img src="./img_detail/type1.webp" alt="머들디퓨저 구성 1"></button>
+                        <button type="button" class="type-item"><img src="./img_detail/type2.webp" alt="머들디퓨저 구성 2"></button>
+                        <button type="button" class="type-item"><img src="./img_detail/type3.webp" alt="머들디퓨저 구성 3"></button>
+                        <button type="button" class="type-item active"><img src="./img_detail/type4.webp" alt="선택된 머들디퓨저 200ml"></button>
+                    </div>
+                </div>
+
+                <div class="option-area">
+                    <label for="diffuserOption" class="blind">디퓨저 향 선택</label>
+                    <select id="diffuserOption">
+                        <option value="">옵션</option>
+                        <option value="bergamot">베르가못의 안녕 - 블랙</option>
+                        <option value="cedarwood">숲을 머금은 시더우드 - 화이트</option>
+                        <option value="cypress">언덕 위의 사이프러스 - 그린</option>
+                        <option value="fig">초여름의 무화과 - 블루</option>
+                        <option value="mandarin">만다린 소르베 - 옐로우</option>
+                        <option value="musk">고요한 머스크 - 베이지</option>
+                    </select>
+                </div>
+
+                <div class="purchase-buttons">
+                    <button type="button" class="cart-button">장바구니 담기</button>
+                    <button type="button" class="buy-button">바로 구매하기</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
 </body>
 </html>

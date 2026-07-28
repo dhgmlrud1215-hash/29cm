@@ -1,0 +1,78 @@
+const galleryImages = [
+    {
+        src: "./img_detail/diffuser-main.webp",
+        alt: "이구어퍼스트로피 머들디퓨저 200ml"
+    },
+    {
+        src: "./img_detail/diffuser-sub1.webp",
+        alt: "머들디퓨저 향과 컬러 구성"
+    },
+    {
+        src: "./img_detail/diffuser-sub2.webp",
+        alt: "머들디퓨저 공간 연출 이미지 1"
+    },
+    {
+        src: "./img_detail/diffuser-sub3.webp",
+        alt: "머들디퓨저 공간 연출 이미지 2"
+    },
+    {
+        src: "./img_detail/diffuser-sub4.webp",
+        alt: "머들디퓨저 공간 연출 이미지 3"
+    }
+];
+
+const mainImage = document.querySelector("#mainProductImage");
+const dots = [...document.querySelectorAll(".dot")];
+const previousButton = document.querySelector(".gallery-arrow.prev");
+const nextButton = document.querySelector(".gallery-arrow.next");
+const wishButton = document.querySelector(".wish-button");
+const typeItems = document.querySelectorAll(".type-item");
+let currentImage = 0;
+
+function showImage(index) {
+    currentImage = (index + galleryImages.length) % galleryImages.length;
+    mainImage.src = galleryImages[currentImage].src;
+    mainImage.alt = galleryImages[currentImage].alt;
+
+    dots.forEach((dot, dotIndex) => {
+        const selected = dotIndex === currentImage;
+        dot.classList.toggle("active", selected);
+
+        if (selected) {
+            dot.setAttribute("aria-current", "true");
+        } else {
+            dot.removeAttribute("aria-current");
+        }
+    });
+}
+
+previousButton.addEventListener("click", () => {
+    showImage(currentImage - 1);
+});
+
+nextButton.addEventListener("click", () => {
+    showImage(currentImage + 1);
+});
+
+dots.forEach((dot, index) => {
+    dot.addEventListener("click", () => {
+        showImage(index);
+    });
+});
+
+wishButton.addEventListener("click", () => {
+    const wished = wishButton.getAttribute("aria-pressed") === "true";
+
+    wishButton.setAttribute("aria-pressed", String(!wished));
+    wishButton.querySelector(".wish-icon").textContent = wished ? "♡" : "♥";
+});
+
+typeItems.forEach((item) => {
+    item.addEventListener("click", () => {
+        typeItems.forEach((button) => {
+            button.classList.remove("active");
+        });
+
+        item.classList.add("active");
+    });
+});

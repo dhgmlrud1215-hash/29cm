@@ -1226,7 +1226,23 @@ body.intro-open {
     flex-direction: column;
 }
 
-.ligroup {display: flex;}
+.ligroup {
+    display: flex;
+    position: relative;
+}
+
+.product-card-link {
+    position: absolute;
+    z-index: 2;
+    inset: 0;
+    display: block;
+    border-radius: inherit;
+}
+
+.product-card-link:focus-visible {
+    outline: 2px solid #111;
+    outline-offset: 3px;
+}
 
 .ligroup img,
 .ligroup-only1419 img {
