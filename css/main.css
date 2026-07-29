@@ -1626,3 +1626,31 @@ body.intro-open {
   margin-left: 280px;
 }
 }
+
+/* 태블릿 메뉴 타이포그래피 */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .mtop_menu > ul > li > a {
+    font-size: 16px;
+    line-height: 1.4;
+  }
+
+  .mtop_menu .tmenu-wrap .tm1 > li > a {
+    padding: 6px 0;
+    font-size: 14px;
+    line-height: 1.35;
+  }
+
+  .tmenu-wrap .tm2 > li > a {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  .tmenu-wrap .tm3 li a {
+    font-size: 13px;
+    line-height: 1.55;
+  }
+
+  .tm2 > li > a::after {
+    font-size: 20px;
+  }
+}
