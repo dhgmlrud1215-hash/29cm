@@ -517,40 +517,71 @@ body.intro-open {
 
 
 /* top 버튼 */
-.topbtn {position: relative; scroll-behavior: smooth; }
-
-.topbtn a {color: #000;}
+.topbtn {
+  position: relative;
+  scroll-behavior: smooth;
+}
 
 .topbtn > button {
-  font-size: 28px;
-  border: 1px solid rgba(255,255,255,0.7);
-  background: rgba(255,255,255,0.85);
-
-  border-radius: 50%;
-  width: 44px;
-  height: 44px;
-
-  color: #555;
-
   position: absolute;
-  right: 0;
-  margin: 15px;
+  right: 13px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  margin-top: 15px;
+  padding: 0;
+  border: 1px solid #e5e5e5;
+  border-radius: 50%;
+  color: #111;
+  background: #fff;
+  box-shadow: 0 5px 16px rgba(0, 0, 0, 0.08);
   cursor: pointer;
+  transition:
+    color 0.2s ease,
+    background-color 0.2s ease,
+    transform 0.2s ease;
+}
 
-  box-shadow:
-    0 4px 12px rgba(0,0,0,0.08),
-    0 1px 3px rgba(0,0,0,0.04);
+.topbtn > button span {
+  position: relative;
+  width: 12px;
+  height: 14px;
+}
 
-  backdrop-filter: blur(8px);
-  transition: all 0.2s ease;
+.topbtn > button span::before {
+  position: absolute;
+  top: 2px;
+  left: 50%;
+  width: 1px;
+  height: 11px;
+  background: currentColor;
+  content: "";
+  transform: translateX(-50%);
+}
+
+.topbtn > button span::after {
+  position: absolute;
+  top: 2px;
+  left: 50%;
+  width: 6px;
+  height: 6px;
+  border-top: 1px solid currentColor;
+  border-left: 1px solid currentColor;
+  content: "";
+  transform: translateX(-50%) rotate(45deg);
 }
 
 .topbtn > button:hover {
+  color: #fff;
+  background: #111;
   transform: translateY(-2px);
+}
 
-  box-shadow:
-    0 8px 18px rgba(0,0,0,0.12),
-    0 3px 6px rgba(0,0,0,0.06);
+.topbtn > button:focus-visible {
+  outline: 2px solid #111;
+  outline-offset: 2px;
 }
 
 /* footer */

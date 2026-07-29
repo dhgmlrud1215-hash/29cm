@@ -107,3 +107,49 @@ window.addEventListener("resize", () => {
         productDescription.style.maxHeight = `${productDescription.scrollHeight}px`;
     }
 });
+
+const floatingShareButton = document.querySelector(".floating-share");
+const scrollTopButton = document.querySelector(".scroll-top-button");
+const scrollBottomButton = document.querySelector(".scroll-bottom-button");
+
+floatingShareButton.addEventListener("click", async () => {
+    const shareData = {
+        title: document.title,
+        url: window.location.href
+    };
+
+    if (navigator.share) {
+        try {
+            await navigator.share(shareData);
+        } catch (error) {
+            if (error.name !== "AbortError") {
+                console.error("상품 공유에 실패했습니다.", error);
+            }
+        }
+        return;
+    }
+
+    try {
+        await navigator.clipboard.writeText(window.location.href);
+        floatingShareButton.setAttribute("aria-label", "상품 링크가 복사되었습니다");
+        setTimeout(() => {
+            floatingShareButton.setAttribute("aria-label", "상품 공유하기");
+        }, 1500);
+    } catch (error) {
+        console.error("상품 링크 복사에 실패했습니다.", error);
+    }
+});
+
+scrollTopButton.addEventListener("click", () => {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+});
+
+scrollBottomButton.addEventListener("click", () => {
+    window.scrollTo({
+        top: document.documentElement.scrollHeight,
+        behavior: "smooth"
+    });
+});

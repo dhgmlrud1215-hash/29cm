@@ -712,6 +712,108 @@ footer .notice > ul > .footer-submenu-item {
     padding: 0;
 }
 
+.floating-actions {
+    position: fixed;
+    right: 28px;
+    bottom: 36px;
+    z-index: 20;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.floating-actions button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    padding: 0;
+    border: 0;
+    color: #111;
+    background: #fff;
+    cursor: pointer;
+    transition:
+        color 0.2s ease,
+        background-color 0.2s ease;
+}
+
+.floating-share {
+    height: 40px;
+    border: 1px solid #e5e5e5 !important;
+    border-radius: 50%;
+    box-shadow: 0 5px 16px rgba(0, 0, 0, 0.08);
+}
+
+.floating-share svg {
+    width: 17px;
+    height: 17px;
+    fill: none;
+    stroke: currentColor;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-width: 1.4;
+}
+
+.floating-scroll {
+    overflow: hidden;
+    border: 1px solid #e5e5e5;
+    border-radius: 20px;
+    background: #fff;
+    box-shadow: 0 5px 16px rgba(0, 0, 0, 0.08);
+}
+
+.floating-scroll button {
+    height: 38px;
+}
+
+.floating-scroll button + button {
+    border-top: 1px solid #eee;
+}
+
+.floating-scroll span {
+    position: relative;
+    width: 12px;
+    height: 14px;
+}
+
+.floating-scroll span::before {
+    position: absolute;
+    top: 2px;
+    left: 50%;
+    width: 1px;
+    height: 11px;
+    background: currentColor;
+    content: "";
+    transform: translateX(-50%);
+}
+
+.floating-scroll span::after {
+    position: absolute;
+    top: 2px;
+    left: 50%;
+    width: 6px;
+    height: 6px;
+    border-top: 1px solid currentColor;
+    border-left: 1px solid currentColor;
+    content: "";
+    transform: translateX(-50%) rotate(45deg);
+}
+
+.scroll-bottom-button span {
+    transform: rotate(180deg);
+}
+
+.floating-actions button:hover {
+    color: #fff;
+    background: #111;
+}
+
+.floating-actions button:focus-visible {
+    outline: 2px solid #111;
+    outline-offset: 2px;
+}
+
 .brand-showcase {
     position: relative;
     width: 100%;
@@ -1032,5 +1134,23 @@ footer .notice > ul > .footer-submenu-item {
 
     .showcase-home {
         width: 100%;
+    }
+
+    .floating-actions {
+        right: 16px;
+        bottom: 24px;
+        gap: 8px;
+    }
+
+    .floating-actions button {
+        width: 38px;
+    }
+
+    .floating-share {
+        height: 38px;
+    }
+
+    .floating-scroll button {
+        height: 36px;
     }
 }
