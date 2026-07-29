@@ -537,7 +537,7 @@ a {
     transform: rotate(180deg);
 }
 
-/* 상품 고시 및 판매자 정보 */
+
 .product-information {
     width: 100%;
     margin-top: 90px;
@@ -545,11 +545,9 @@ a {
     border-top: 1px solid #ddd;
 }
 
-
-/* 안전거래 안내 */
 .safe-trade {
     width: 100%;
-    max-width: 1180px;
+    max-width: 1300px;
     margin: 0 auto 55px;
     color: #444;
     font-size: 11px;
@@ -708,6 +706,147 @@ a {
     font-size: 14px;
     line-height: 1.6;
     word-break: keep-all;
+}
+
+footer .notice > ul > .footer-submenu-item {
+    padding: 0;
+}
+
+.brand-showcase {
+    position: relative;
+    width: 100%;
+    max-width: 1320px;
+    min-height: 445px;
+    margin: 80px auto 0;
+    overflow: hidden;
+    background-image: url("../img_detail/detail-footer.webp");
+    background-position: center;
+    background-size: cover;
+}
+
+
+.brand-showcase::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background:
+        linear-gradient(
+            90deg,
+            rgba(26, 12, 0, 0.75) 0%,
+            rgba(20, 13, 5, 0.45) 48%,
+            rgba(0, 0, 0, 0.25) 100%
+        );
+}
+
+.brand-showcase-content {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    min-height: 445px;
+    padding: 50px;
+    color: #fff;
+}
+
+.showcase-brand-name {
+    margin: 0 0 8px;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.brand-showcase-content h2 {
+    margin: 0 0 15px;
+    font-size: 38px;
+    line-height: 1;
+}
+
+.showcase-description {
+    margin: 0 0 28px;
+    font-size: 14px;
+}
+
+
+.showcase-like {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 52px;
+    padding: 0;
+    color: #fff;
+}
+
+.showcase-heart {
+    font-size: 30px;
+    line-height: 1;
+}
+
+.showcase-like span:last-child {
+    margin-top: 3px;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+
+.showcase-home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    min-width: 132px;
+    height: 44px;
+    padding: 0 18px;
+    border-radius: 3px;
+    color: #111;
+    background: #fff;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.showcase-home span {
+    font-size: 23px;
+    font-weight: 400;
+}
+
+
+.product-policy {
+    width: 100%;
+    max-width: 1320px;
+    margin: 70px auto 0;
+}
+
+.policy-section {
+    margin-bottom: 52px;
+}
+
+.policy-section:last-child {
+    margin-bottom: 0;
+}
+
+.policy-section h2 {
+    margin: 0 0 16px;
+    padding-bottom: 12px;
+    border-bottom: 3px solid #111;
+    font-size: 18px;
+    line-height: 1.4;
+}
+
+.policy-section ul {
+    margin: 0;
+    padding-left: 18px;
+}
+
+.policy-section li {
+    margin-bottom: 8px;
+    color: #555;
+    font-size: 12px;
+    line-height: 1.6;
+}
+
+.policy-section li:last-child {
+    margin-bottom: 0;
 }
 
 @media (max-width: 960px) {
@@ -869,5 +1008,29 @@ a {
     .product-notice p {
         font-size: 12px;
         word-break: keep-all;
+    }
+
+     .brand-showcase {
+        min-height: 390px;
+        margin-top: 50px;
+        background-position: 60% center;
+    }
+
+    .brand-showcase-content {
+        justify-content: flex-end;
+        min-height: 390px;
+        padding: 30px 24px;
+    }
+
+    .brand-showcase-content h2 {
+        font-size: 32px;
+    }
+
+    .showcase-like {
+        margin-bottom: 35px;
+    }
+
+    .showcase-home {
+        width: 100%;
     }
 }
